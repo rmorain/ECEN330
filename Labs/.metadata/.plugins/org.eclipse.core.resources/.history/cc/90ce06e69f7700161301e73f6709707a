@@ -1,0 +1,20 @@
+/*
+ * buttons.h
+ *
+ *  Created on: Sep 10, 2016
+ *      Author: cdmoo
+ */
+
+#ifndef BUTTONS_H_
+#define BUTTONS_H_
+
+#include "xil_io.h"
+
+#define BUTTONS_DATA_OFFSET 0x00
+#define BUTTONS_TRI_OFFSET 0x04
+
+void buttons_runTest();
+
+
+
+#endif /* BUTTONS_H_ */

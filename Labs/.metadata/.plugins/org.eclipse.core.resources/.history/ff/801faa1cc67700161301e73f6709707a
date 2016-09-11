@@ -1,0 +1,97 @@
+/*
+ * buttons.c
+ *
+ *  Created on: Sep 10, 2016
+ *      Author: cdmoo
+ */
+
+#include "buttons.h"
+#include <stdio.h>
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+#define BUTTONS_POSITION_ZERO 0
+#define BUTTONS_POSITION_ONE 1
+#define BUTTONS_POSITION_TWO 2
+#define BUTTONS_POSITION_THREE 3
+#define BUTTON_HEIGHT (DISPLAY_HEIGHT / 2)
+#define BUTTON_WIDTH (DISPLAY_WIDTH / 4)
+#define BUTTON_TEXT_OFFSETX (BUTTON_WIDTH / 4)
+#define BUTTON_TEXT_OFFSETY (BUTTON_HEIGHT / 2)
+#define BUTTON_COUNT 3
+
+// helper function to read the GPIO button register
+int32_t buttons_readGpioRegister(int32_t offset) {
+    return Xil_In32(XPAR_PUSH_BUTTONS_BASEADDR + offset);
+}
+
+// helper function to draw a 'button rect' to the screen with text
+void buttons_drawButton(unsigned char buttonPosition, uint16_t fillColor, uint16_t textColor, const char buttonText[]) {
+    int16_t buttonX = BUTTON_WIDTH * (BUTTON_COUNT - buttonPosition);
+
+    display_fillRect(buttonX, 0, BUTTON_WIDTH, BUTTON_HEIGHT, fillColor);
+    display_setCursor(buttonX + BUTTON_TEXT_OFFSETX, 0 + BUTTON_TEXT_OFFSETY);
+    display_setTextColor(textColor);
+    display_print(buttonText);
+}
+
+// helper function to display current button state on the screen
+void buttons_displayState(int32_t buttons_state) {
+    display_fillScreen(DISPLAY_BLACK);  // Blank the screen.
+
+    if(buttons_state & 0x00000001) {
+        buttons_drawButton(BUTTONS_POSITION_ZERO, DISPLAY_YELLOW, DISPLAY_BLACK, "BTN0");
+    }
+    if(buttons_state & 0x00000002) {
+        buttons_drawButton(BUTTONS_POSITION_ONE, DISPLAY_GREEN, DISPLAY_BLACK, "BTN1");
+    }
+    if(buttons_state & 0x00000004) {
+        buttons_drawButton(BUTTONS_POSITION_TWO, DISPLAY_RED, DISPLAY_WHITE, "BTN2");
+    }
+    if(buttons_state & 0x00000008) {
+        buttons_drawButton(BUTTONS_POSITION_THREE, DISPLAY_BLUE, DISPLAY_WHITE, "BTN3");
+    }
+}
+
+// helper function to write to the GPIO button register
+int32_t buttons_writeGpioRegister(int32_t) {
+
+}
+
+
+int32_t buttons_read() {
+    return buttons_readGpioRegister(BUTTONS_DATA_OFFSET);
+}
+
+int32_t buttons_init() {
+    display_init();  // Must init all of the software and underlying hardware for LCD.
+    display_fillScreen(DISPLAY_BLACK);  // Blank the screen.
+    display_setCursor(0, 0);            // The upper left of the LCD screen.
+    display_setTextSize(2);             // Make the text a little larger.
+    return BUTTONS_INIT_STATUS_OK;
+}
+
+void buttons_runTest() {
+    buttons_init();
+
+
+    // continually read the state of the buttons and update the screen until all buttons are on
+    while(1) {
+        int32_t buttons_state = buttons_read();
+
+        // write the leds according to the current state (in hex) of the switches
+        buttons_displayState(buttons_state);
+
+        // if the all of the buttons are pressed, exit the function
+        if(buttons_state == BUTTONS_EXIT_CODE) {
+            // clear the screen before exiting
+            display_fillScreen(DISPLAY_BLACK);  // Blank the screen.
+            return;
+        }
+    }
+}
+
+
+

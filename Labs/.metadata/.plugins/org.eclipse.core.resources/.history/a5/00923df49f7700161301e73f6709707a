@@ -1,0 +1,20 @@
+/*
+ * switches.h
+ *
+ *  Created on: Sep 10, 2016
+ *      Author: cdmoo
+ */
+
+#ifndef SWITCHES_H_
+#define SWITCHES_H_
+
+#include "xil_io.h"
+
+#define SWITCHES_DATA_OFFSET 0x00
+#define SWITCHES_TRI_OFFSET 0x04
+
+void switches_runTest();
+
+
+
+#endif /* SWITCHES_H_ */

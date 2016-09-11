@@ -1,0 +1,42 @@
+/*
+ * switches.c
+ *
+ *  Created on: Sep 10, 2016
+ *      Author: cdmoo
+ */
+
+#include "switches.h"
+#include "supportFiles/leds.h"
+#include <stdio.h>
+
+//Helper function to read GPIO registers
+int32_t switches_readGpioRegister(int32_t offset) {
+    return Xil_In32(XPAR_SLIDE_SWITCHES_BASEADDR + offset);
+}
+
+int32_t switches_init() {
+    leds_init(1);
+    return SWITCHES_INIT_STATUS_OK;
+}
+
+int32_t switches_read() {
+    return switches_readGpioRegister(SWITCHES_DATA_OFFSET);
+}
+
+void switches_runTest() {
+    switches_init();
+
+    while(1) {
+        int32_t switches_state = switches_read();
+        printf("switches state: %lu\n", switches_state);
+        leds_write(switches_state);
+        if(switches_state == SWITCHES_EXIT_CODE) {
+            return;
+        }
+    }
+}
+
+
+
+
+
