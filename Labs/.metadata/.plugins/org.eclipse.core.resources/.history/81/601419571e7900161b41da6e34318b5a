@@ -4,7 +4,7 @@
  *  Created on: Sep 10, 2016
  *      Author: cdmoo
  */
-#include "switches.h"
+
 
 //Helper function to read GPIO registers
 int32_t switches_readGpioRegister(int32_t offset) {

@@ -6,8 +6,11 @@
  */
 
 #include "buttons.h"
+#include <stdio.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 
-// private constants
 #define BUTTONS_POSITION_ZERO 0  // button farthest to the right
 #define BUTTONS_POSITION_ONE 1  // button 2nd to the right
 #define BUTTONS_POSITION_TWO 2 // button 2nd to the left

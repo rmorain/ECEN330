@@ -11,7 +11,6 @@
 #include "xil_io.h"
 #include "supportFiles/display.h"
 
-// advertised constants
 #define BUTTONS_DATA_OFFSET 0x00 // offset from the base address to the gpioData register
 #define BUTTONS_TRI_OFFSET 0x04 // offset from the base address to the gpioTriState register
 #define BUTTONS_INIT_STATUS_OK 1 // successfull return code from init function

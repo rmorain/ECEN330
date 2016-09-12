@@ -9,6 +9,7 @@
 #define SWITCHES_H_
 
 #include "xil_io.h"
+#include "switches.h"
 #include "supportFiles/leds.h"
 
 #define SWITCHES_DATA_OFFSET 0x00 // offset from the base address to the switches register
