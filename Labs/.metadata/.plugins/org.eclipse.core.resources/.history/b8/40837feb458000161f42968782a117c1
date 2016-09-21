@@ -221,15 +221,13 @@ intervalTimer_status_t intervalTimer_test(uint32_t timerNumber) {
 }
 
 // convenience function that tests all timers
-intervalTimer_status_t intervalTimer_testAll() {
+intervalTimerStatus_t intervalTimer_testAll() {
     // test timer 0
     intervalTimer_status_t status0 = intervalTimer_test(INTERVAL_TIMER_TIMER_0);
     // test timer 1
     intervalTimer_status_t status1 = intervalTimer_test(INTERVAL_TIMER_TIMER_1);
     // test timer 2
     intervalTimer_status_t status2 = intervalTimer_test(INTERVAL_TIMER_TIMER_2);
-    // if all of the test statuses were successfull, return a successfull status,
-        // otherwise return a fail status
     return status0 && status1 && status2 ? INTERVAL_TIMER_STATUS_OK  : INTERVAL_TIMER_STATUS_FAIL;
 }
 

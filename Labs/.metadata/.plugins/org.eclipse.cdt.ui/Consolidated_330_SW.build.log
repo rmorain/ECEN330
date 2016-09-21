@@ -1,8 +1,15 @@
-15:44:29 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+15:54:27 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
 make all 
 'Building file: ../src/intervalTimer/intervalTimer.c'
 'Invoking: ARM g++ compiler'
 arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/intervalTimer/intervalTimer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/intervalTimer/intervalTimer.d" -MT"src/intervalTimer/intervalTimer.d" -o "src/intervalTimer/intervalTimer.o" "../src/intervalTimer/intervalTimer.c"
+../src/intervalTimer/intervalTimer.c: In function 'intervalTimer_status_t intervalTimer_test(uint32_t)':
+../src/intervalTimer/intervalTimer.c:219:35: warning: statement has no effect [-Wunused-value]
+         INTERVAL_TIMER_STATUS_FAIL;
+                                   ^
+../src/intervalTimer/intervalTimer.c:221:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
 'Finished building: ../src/intervalTimer/intervalTimer.c'
 ' '
 'Building target: Consolidated_330_SW.elf'
@@ -13,9 +20,9 @@ arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp
 'Invoking: ARM Print Size'
 arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 205436	   3184	6010216	6218836	 5ee454	Consolidated_330_SW.elf
+ 205648	   3184	6010224	6219056	 5ee530	Consolidated_330_SW.elf
 'Finished building: Consolidated_330_SW.elf.size'
 ' '
 
-15:44:31 Build Finished (took 1s.671ms)
+15:54:28 Build Finished (took 1s.468ms)
 

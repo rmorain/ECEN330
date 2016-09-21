@@ -185,8 +185,6 @@ void intervalTimer_resetAll() {
     intervalTimer_reset(INTERVAL_TIMER_TIMER_2);
 }
 
-// tests aspects of the interval timer (init and reset to 0) and gives
-// examples of how to call the public api
 intervalTimer_status_t intervalTimer_test(uint32_t timerNumber) {
     // get the base address of the correct timer
     uint32_t baseAddr = getBaseAddress(timerNumber);
@@ -195,11 +193,6 @@ intervalTimer_status_t intervalTimer_test(uint32_t timerNumber) {
     intervalTimer_status_t initStatus = intervalTimer_init(timerNumber);
     // keep track of correct functioning of the timer in the runStatus variable
     intervalTimer_status_t runStatus = INTERVAL_TIMER_STATUS_OK;
-
-    // make sure the init call sets the reg to 0, and store the result in the
-    // isClearAfterInit status code
-    intervalTimer_status_t isClearAfterInit;
-    isClearAfterInit = !readTimerRegister(baseAddr, TCR0_OFFSET);
 
     // example on how to start and stop the timer
     intervalTimer_start(timerNumber);
@@ -212,25 +205,7 @@ intervalTimer_status_t intervalTimer_test(uint32_t timerNumber) {
     runStatus = !readTimerRegister(baseAddr, TCR0_OFFSET);
 
     // return ok if the init status and run status don't have errors, return false otherwise
-    if(initStatus && runStatus && isClearAfterInit) {
-        return INTERVAL_TIMER_STATUS_OK;
-    }
-    else {
-        INTERVAL_TIMER_STATUS_FAIL;
-    }
-}
-
-// convenience function that tests all timers
-intervalTimer_status_t intervalTimer_testAll() {
-    // test timer 0
-    intervalTimer_status_t status0 = intervalTimer_test(INTERVAL_TIMER_TIMER_0);
-    // test timer 1
-    intervalTimer_status_t status1 = intervalTimer_test(INTERVAL_TIMER_TIMER_1);
-    // test timer 2
-    intervalTimer_status_t status2 = intervalTimer_test(INTERVAL_TIMER_TIMER_2);
-    // if all of the test statuses were successfull, return a successfull status,
-        // otherwise return a fail status
-    return status0 && status1 && status2 ? INTERVAL_TIMER_STATUS_OK  : INTERVAL_TIMER_STATUS_FAIL;
+    return initStatus && runStatus ? INTERVAL_TIMER_STATUS_OK : INTERVAL_TIMER_STATUS_FAIL;
 }
 
 
