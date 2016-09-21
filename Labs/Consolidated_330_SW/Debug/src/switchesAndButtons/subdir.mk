@@ -5,18 +5,15 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/switchesAndButtons/buttons.c \
-../src/switchesAndButtons/switches.c \
-../src/switchesAndButtons/switchesAndButtonsLabMain.c 
+../src/switchesAndButtons/switches.c 
 
 OBJS += \
 ./src/switchesAndButtons/buttons.o \
-./src/switchesAndButtons/switches.o \
-./src/switchesAndButtons/switchesAndButtonsLabMain.o 
+./src/switchesAndButtons/switches.o 
 
 C_DEPS += \
 ./src/switchesAndButtons/buttons.d \
-./src/switchesAndButtons/switches.d \
-./src/switchesAndButtons/switchesAndButtonsLabMain.d 
+./src/switchesAndButtons/switches.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

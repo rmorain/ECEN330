@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Consolidated_330_SW/src/intervalTimer/intervalTimer.h&apos;" deleteContents="false" description="Delete resource &apos;Consolidated_330_SW/src/intervalTimer/intervalTimer.h&apos;" element1="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1474137296727"/>
+</session>

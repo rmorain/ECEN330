@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include "intervalTimer.h"
+
+int main() {
+    // initialize only timer 0 for milestone 1
+    //uint32_t initStatus0 = intervalTimer_init(INTERVAL_TIMER_TIMER_0);
+    printf("%ul\n", sizeof(short));
+
+    return 0;
+}
+
+// This function must be defined but can be left empty for now.
+// You will use this function in a later lab.
+// It is called in the timer interrupt service routine (see interrupts.c in supportFiles).
+void isr_function() {
+    // Empty for now.
+}

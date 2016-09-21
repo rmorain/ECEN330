@@ -1,0 +1,118 @@
+#include "intervalTimer.h"
+#include "../switchesAndButtons/buttons.h"
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_io.h"
+
+#define ZERO_INIT_VALUE_SMALL 0x000
+#define ZERO_INIT_VALUE_LARGE 0x00000000
+#define CASC_INIT_VALUE 0x800
+
+#define TCSR0_OFFSET 0
+#define TLR0_OFFSET 0x04
+#define TCR0_OFFSET 0x08
+#define TCSR1_OFFSET 0x10
+#define TLR1_OFFSET 0x14
+#define TCR1_OFFSET 0x18
+
+#define ENT_MASK 0x080
+#define LOAD_MASK 0x020
+#define UDT_MASK 0x002
+
+#define READ_SHIFT 32
+
+uint32_t getBaseAddress(uint32_t timerNumber) {
+    uint32_t baseAddr;
+
+    switch(timerNumber) {
+
+        case INTERVAL_TIMER_TIMER_0:
+            baseAddr = XPAR_AXI_TIMER_0_BASEADDR;
+            break;
+        case INTERVAL_TIMER_TIMER_1:
+            baseAddr = XPAR_AXI_TIMER_1_BASEADDR;
+            break;
+        case INTERVAL_TIMER_TIMER_2:
+            baseAddr = XPAR_AXI_TIMER_2_BASEADDR;
+            break;
+    }
+
+    return baseAddr;
+}
+
+uint32_t readTimerRegister(uint32_t baseAddr, uint32_t offset) {
+    return Xil_In32(baseAddr + offset);
+}
+
+void writeTimerRegister(uint32_t baseAddr, uint32_t offset, uint32_t writeValue) {
+    Xil_Out32(baseAddr + offset, writeValue);
+}
+
+double intervalTimer_getTotalDurationInSeconds(uint32_t timerNumber) {
+    uint32_t baseAddr = getBaseAddress(timerNumber);
+
+    uint32_t tcr1Val = readTimerRegister(baseAddr, TCR1_OFFSET);
+    uint32_t tcr0Val = readTimerRegister(baseAddr, TCR0_OFFSET);
+
+    uint32_t tcr1Val_temp = readTimerRegister(baseAddr, TCR1_OFFSET);
+
+    if(tcr1Val_temp != tcr1Val) {
+        tcr1Val = tcr1Val_temp;
+        tcr0Val = readTimerRegister(baseAddr, TCR0_OFFSET);
+    }
+
+    uint64_t totalValue = (tcr1Val << READ_SHIFT) | tcr0Val;
+
+    double elapsedTime = (1.0 / XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ) * totalValue;
+
+    return elapsedTime;
+}
+
+intervalTimer_status_t intervalTimer_init(uint32_t timerNumber) {
+
+    uint32_t baseAddr = getBaseAddress(timerNumber);
+
+    writeTimerRegister(baseAddr, TCSR0_OFFSET, ZERO_INIT_VALUE_SMALL);
+    writeTimerRegister(baseAddr, TCSR1_OFFSET, ZERO_INIT_VALUE_SMALL);
+    writeTimerRegister(baseAddr, TCSR0_OFFSET, CASC_INIT_VALUE);
+
+    return INTERVAL_TIMER_STATUS_OK;
+}
+
+
+void intervalTimer_start(uint32_t timerNumber) {
+    uint32_t baseAddr = getBaseAddress(timerNumber);
+    uint32_t tcsr0Val = readTimerRegister(baseAddr, TCSR0_OFFSET);
+    writeTimerRegister(baseAddr, TCSR0_OFFSET, tcsr0Val | ENT_MASK);
+}
+
+void intervalTimer_stop(uint32_t timerNumber) {
+    uint32_t baseAddr = getBaseAddress(timerNumber);
+    uint32_t tcsr0Val = readTimerRegister(baseAddr, TCSR0_OFFSET);
+    writeTimerRegister(baseAddr, TCSR0_OFFSET, tcsr0Val & (~ENT_MASK));
+}
+
+void intervalTimer_reset(uint32_t timerNumber) {
+    uint32_t baseAddr = getBaseAddress(timerNumber);
+
+    // write a 0 to TLR0 register
+    writeTimerRegister(baseAddr, TLR0_OFFSET, ZERO_INIT_VALUE_LARGE);
+
+    // write a 1 into the LOAD0 bit in the TCSR0
+    uint32_t tcsr0Val = readTimerRegister(baseAddr, TCSR0_OFFSET);
+    writeTimerRegister(baseAddr, TCSR0_OFFSET, tcsr0Val | LOAD_MASK);
+
+    //write a 0 to TLR1 register
+    writeTimerRegister(baseAddr, TLR1_OFFSET, ZERO_INIT_VALUE_LARGE);
+
+    // write a 1 into the LOAD1 bit in the TCSR1
+    uint32_t tcsr1Val = readTimerRegister(baseAddr, TCSR1_OFFSET);
+    writeTimerRegister(baseAddr, TCSR1_OFFSET, tcsr1Val | LOAD_MASK);
+
+    intervalTimer_init(timerNumber);
+}
+
+
+
+
+

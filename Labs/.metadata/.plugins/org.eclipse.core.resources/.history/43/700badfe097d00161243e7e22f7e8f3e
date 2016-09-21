@@ -1,0 +1,11 @@
+#include "intervalTimer.h"
+#include "../switchesAndButtons/buttons.h"
+
+intervalTimer_status_t intervalTimer_init(uint32_t timerNumber) {
+    return INTERVAL_TIMER_STATUS_OK;
+}
+
+
+
+
+

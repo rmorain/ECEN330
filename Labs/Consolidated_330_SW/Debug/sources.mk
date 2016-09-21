@@ -26,4 +26,5 @@ S_UPPER_DEPS :=
 SUBDIRS := \
 supportFiles \
 src/switchesAndButtons \
+src/intervalTimer \
 

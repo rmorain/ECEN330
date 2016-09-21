@@ -1,0 +1,19 @@
+#include "intervalTimer.h"
+#include "../switchesAndButtons/buttons.h"
+#include <stdio.h>
+
+intervalTimer_status_t intervalTimer_init(uint32_t timerNumber) {
+    if(timerNumber < 0 || timerNumber > 2) {
+        printf("You attempted to initialize a timer number outside of the accepted range");
+        return INTERVAL_TIMER_STATUS_FAIL;
+    }
+
+
+
+    return INTERVAL_TIMER_STATUS_OK;
+}
+
+
+
+
+
