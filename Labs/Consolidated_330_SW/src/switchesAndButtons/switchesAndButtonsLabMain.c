@@ -4,7 +4,6 @@
  *  Created on: Sep 10, 2016
  *      Author: cdmoo
  */
-#include <stdio.h>
 #include "switches.h"
 #include "buttons.h"
 
