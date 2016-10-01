@@ -1,0 +1,261 @@
+/*
+ * clockDisplay.c
+ *
+ *  Created on: Sep 28, 2016
+ *      Author: cdmoo
+ */
+#include "clockDisplay.h"
+#include <stdio.h>
+#include "supportFiles/display.h"
+#include "string.h"
+#include "supportFiles/utils.h"
+#include "../intervalTimer/intervalTimer.h"
+
+// size of the clock numbers - also scales the size of the arrows
+#define CLOCK_TEXT_SIZE 6
+#define NUM_DISPLAY_CHARS 8 // number of characters in the clock string
+
+#define ARROW_WIDTH (12 * CLOCK_TEXT_SIZE) // width in pixels of an arrow
+#define ARROW_HEIGHT (9 * CLOCK_TEXT_SIZE) // height in pixels of an arrow
+#define ARROW_PADDING (5.5 * CLOCK_TEXT_SIZE) // width in pixels of space between each arrow
+// width in pixels of the entire block containing all arrows and clock text
+#define CLOCK_DISPLAY_WIDTH (3*ARROW_WIDTH + 2*ARROW_PADDING)
+// offset of the first arrow from the left side
+#define ARROW_OFFSET_X0 (DISPLAY_WIDTH / 2 - CLOCK_DISPLAY_WIDTH / 2)
+// offset of the second arrow from the left side
+#define ARROW_OFFSET_X1 (ARROW_OFFSET_X0 + ARROW_WIDTH + ARROW_PADDING)
+// offset of the third arrow from the left side
+#define ARROW_OFFSET_X2 (ARROW_OFFSET_X1 + ARROW_WIDTH + ARROW_PADDING)
+// vertical offset of an arrow from the vertical middle of the screen
+#define ARROW_MIDY_OFFSET (6 * CLOCK_TEXT_SIZE)
+// vertical offset of the arrow from the top of the screen
+#define ARROW_OFFSET_Y0 ((DISPLAY_HEIGHT / 2) - ARROW_MIDY_OFFSET)
+// vertical offset of the arrow from the bottom of the screen
+#define ARROW_OFFSET_Y1 ((DISPLAY_HEIGHT / 2) + ARROW_MIDY_OFFSET)
+
+#define CURSOR_POS_X0 ARROW_OFFSET_X0 // offset of the text to be rendered frim the left
+// 1st cursor position for writing clock text
+#define CURSOR_POS_Y (DISPLAY_HEIGHT / 2 - 3 * CLOCK_TEXT_SIZE)
+// 2nd cursor position for writing clock text
+#define CURSOR_POS_X1 (CURSOR_POS_X0 + ARROW_WIDTH / 2)
+// 3rd cursor position for writing clock text
+#define CURSOR_POS_X2 (CURSOR_POS_X0 + ARROW_WIDTH)
+// 4th cursor position for writing clock text
+#define CURSOR_POS_X3 ARROW_OFFSET_X1
+// 5th cursor position for writing clock text
+#define CURSOR_POS_X4 (CURSOR_POS_X3 + ARROW_WIDTH / 2)
+// 6th cursor position for writing clock text
+#define CURSOR_POS_X5 (CURSOR_POS_X3 + ARROW_WIDTH)
+// 7th cursor position for writing clock text
+#define CURSOR_POS_X6 ARROW_OFFSET_X2
+// 8th cursor position for writing clock text
+#define CURSOR_POS_X7 (CURSOR_POS_X6 + ARROW_WIDTH / 2)
+
+// the following three constants are for dividing the screen into the six pre-defined touch
+// zones corresponding to the increment and decrement of hours, minutes, and seconds
+#define Y_MID_DIVIDER (DISPLAY_HEIGHT / 2)
+#define X_DIVIDER_1 (DISPLAY_WIDTH / 3)
+#define X_DIVIDER_2 (DISPLAY_WIDTH * 2 / 3)
+
+// an array holding all of the cursor positions so that a for loop can be used to render clock text
+static const uint32_t cursorPositions[NUM_DISPLAY_CHARS] = {CURSOR_POS_X0, CURSOR_POS_X1,
+        CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+
+static uint32_t seconds = 0; // global variable storing clock seconds
+static uint32_t minutes = 0; // global variable storing clock minutes
+static uint32_t hours = 1; // global variable storing clock hours
+static char currentTime[NUM_DISPLAY_CHARS]; // string storing the most recent calculated time
+static char displayedTime[NUM_DISPLAY_CHARS]; // string storing the most recently displayed time
+static int16_t lastTouchX; // global variable storing most recent touch data on the x axis
+static int16_t lastTouchY; // global variable storing most recent touch data on the y axis
+static uint8_t lastTouchZ; // global variable storing most recent touch data on the z axis (pressure)
+
+// this function is responsible initializing all of the hardware it needs to interact with and set the display
+// up for the initial clock screen
+void clockDisplay_init() {
+    intervalTimer_start(0);
+    display_init();  // Must init all of the software and underlying hardware for LCD.
+    display_fillScreen(DISPLAY_BLACK);  // Blank the screen.
+    display_setTextColor(DISPLAY_RED);  // Make the text red.
+    display_setTextSize(CLOCK_TEXT_SIZE);
+
+    display_fillTriangle(ARROW_OFFSET_X0, ARROW_OFFSET_Y0, ARROW_OFFSET_X0 + ARROW_WIDTH, ARROW_OFFSET_Y0,
+            ARROW_OFFSET_X0 + ARROW_WIDTH / 2, ARROW_OFFSET_Y0 - ARROW_HEIGHT, DISPLAY_GREEN);
+    display_fillTriangle(ARROW_OFFSET_X1, ARROW_OFFSET_Y0, ARROW_OFFSET_X1 + ARROW_WIDTH, ARROW_OFFSET_Y0,
+            ARROW_OFFSET_X1 + ARROW_WIDTH / 2, ARROW_OFFSET_Y0 - ARROW_HEIGHT, DISPLAY_GREEN);
+    display_fillTriangle(ARROW_OFFSET_X2, ARROW_OFFSET_Y0, ARROW_OFFSET_X2 + ARROW_WIDTH, ARROW_OFFSET_Y0,
+            ARROW_OFFSET_X2 + ARROW_WIDTH / 2, ARROW_OFFSET_Y0 - ARROW_HEIGHT, DISPLAY_GREEN);
+
+    display_fillTriangle(ARROW_OFFSET_X0, ARROW_OFFSET_Y1, ARROW_OFFSET_X0 + ARROW_WIDTH, ARROW_OFFSET_Y1,
+            ARROW_OFFSET_X0 + ARROW_WIDTH / 2, ARROW_OFFSET_Y1 + ARROW_HEIGHT, DISPLAY_GREEN);
+    display_fillTriangle(ARROW_OFFSET_X1, ARROW_OFFSET_Y1, ARROW_OFFSET_X1 + ARROW_WIDTH, ARROW_OFFSET_Y1,
+            ARROW_OFFSET_X1 + ARROW_WIDTH / 2, ARROW_OFFSET_Y1 + ARROW_HEIGHT, DISPLAY_GREEN);
+    display_fillTriangle(ARROW_OFFSET_X2, ARROW_OFFSET_Y1, ARROW_OFFSET_X2 + ARROW_WIDTH, ARROW_OFFSET_Y1,
+            ARROW_OFFSET_X2 + ARROW_WIDTH / 2, ARROW_OFFSET_Y1 + ARROW_HEIGHT, DISPLAY_GREEN);
+
+    //init the time strings
+    sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+    sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+
+    clockDisplay_updateTimeDisplay(1);
+    intervalTimer_stop(0);
+    printf("time elapsed for clockDisplay_init() : %f\n", intervalTimer_getTotalDurationInSeconds(0));
+    intervalTimer_reset(0);
+}
+
+
+void updateDisplayChar(int index) {
+    display_setCursor(cursorPositions[index], CURSOR_POS_Y);
+    display_setTextColor(DISPLAY_BLACK);
+    display_print(displayedTime[index]);
+
+    display_setCursor(cursorPositions[index], CURSOR_POS_Y);
+    display_setTextColor(DISPLAY_RED);
+    display_print(currentTime[index]);
+
+    displayedTime[index] = currentTime[index];
+}
+
+void clockDisplay_updateTimeDisplay(bool forceUpdateAll) {
+    intervalTimer_start(0);
+    char temp[NUM_DISPLAY_CHARS];
+    sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+    strncpy(currentTime, temp, NUM_DISPLAY_CHARS);
+
+    for(int i = 0; i < NUM_DISPLAY_CHARS; i++) {
+        if(currentTime[i] != displayedTime[i] || forceUpdateAll) {
+            updateDisplayChar(i);
+        }
+    }
+
+    intervalTimer_stop(0);
+    printf("time elapsed for clockDisplay_updateTimeDisplay() : %f\n", intervalTimer_getTotalDurationInSeconds(0));
+    intervalTimer_reset(0);
+}
+
+void incrementHours() {
+    if(hours < 12) {
+        hours++;
+    }
+    else {
+        hours = 1;
+    }
+    clockDisplay_updateTimeDisplay(0);
+}
+
+void incrementMinutes() {
+    if(minutes < 59) {
+        minutes++;
+    }
+    else {
+        minutes = 0;
+        incrementHours();
+    }
+    clockDisplay_updateTimeDisplay(0);
+}
+
+void incrementSeconds() {
+    if(seconds < 59) {
+        seconds++;
+    }
+    else {
+        seconds = 0;
+        incrementMinutes();
+    }
+    clockDisplay_updateTimeDisplay(0);
+}
+
+void decrementHours() {
+    if(hours > 0 ) {
+        hours--;
+    }
+    else {
+        hours = 12;
+    }
+    clockDisplay_updateTimeDisplay(0);
+}
+
+void decrementMinutes() {
+    if(minutes > 0) {
+        minutes--;
+    }
+    else {
+        minutes = 59;
+        decrementHours();
+    }
+    clockDisplay_updateTimeDisplay(0);
+}
+
+void decrementSeconds() {
+    if(seconds > 0) {
+        seconds--;
+    }
+    else {
+        seconds = 59;
+        decrementMinutes();
+    }
+    clockDisplay_updateTimeDisplay(0);
+}
+
+void clockDisplay_performIncDec() {
+    display_getTouchedPoint(&lastTouchX, &lastTouchY, &lastTouchZ);
+    if(lastTouchY < Y_MID_DIVIDER) {
+        if(lastTouchX < X_DIVIDER_1) {
+            incrementHours();
+        }
+        else if(lastTouchX < X_DIVIDER_2) {
+            incrementMinutes();
+        }
+        else {
+            incrementSeconds();
+        }
+    }
+    else {
+        if(lastTouchX < X_DIVIDER_1) {
+            decrementHours();
+        }
+        else if(lastTouchX < X_DIVIDER_2) {
+            decrementMinutes();
+        }
+        else {
+            decrementSeconds();
+        }
+    }
+}
+
+void clockDisplay_advanceTimeOneSecond() {
+    incrementSeconds();
+}
+
+void clockDisplay_runTest() {
+    clockDisplay_init();
+
+    incrementHours();
+    utils_msDelay(1000);
+
+    decrementHours();
+    utils_msDelay(1000);
+
+    incrementMinutes();
+    utils_msDelay(1000);
+
+    decrementMinutes();
+    utils_msDelay(1000);
+
+    incrementSeconds();
+    utils_msDelay(1000);
+
+    decrementSeconds();
+    utils_msDelay(1000);
+
+
+    for(int i = 0; i < 100; i++) {
+        incrementSeconds();
+        utils_msDelay(100);
+    }
+    printf("exiting\n\r");
+}
+
+
+
+

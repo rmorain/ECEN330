@@ -1,0 +1,64 @@
+/*
+ * clockControl.c
+ *
+ *  Created on: Sep 28, 2016
+ *      Author: cdmoo
+ */
+
+// States for the controller state machine.
+enum clockControl_st_t {
+    init_st,                 // Start here, stay in this state for just one tick.
+    waiting_for_touch_st,    // waiting for touch, clock is enabled and running.
+    ad_timer_running_st,     // waiting for the touch-controller ADC to settle.
+    auto_timer_running_st,   // waiting for the auto-update delay to expire
+                                 // (user is holding down button for auto-inc/dec)
+    rate_timer_running_st,   // waiting for the rate-timer to expire to know when to perform the auto inc/dec.
+    rate_timer_expired_st,   // when the rate-timer expires, perform the inc/dec function.
+    add_second_to_clock_st   // add a second to the clock time and reset the ms counter.
+} currentState = init_st;
+
+void clockControl_tick() {
+  // Perform state action first.
+  switch(currentState) {
+    case init_st:
+      break;
+    case waiting_for_touch_st:
+      break;
+    case ad_timer_running_st:
+      break;
+    case auto_timer_running_st:
+      break;
+    case rate_timer_running_st:
+      break;
+    case rate_timer_expired_st:
+      break;
+     default:
+      printf("clockControl_tick state action: hit default\n\r");
+      break;
+  }
+
+  // Perform state update next.
+  switch(currentState) {
+    case init_st:
+      break;
+    case never_touched_st:
+      break;
+    case waiting_for_touch_st:
+      break;
+    case ad_timer_running_st:
+      break;
+    case auto_timer_running_st:
+      break;
+    case rate_timer_running_st:
+      break;
+    case rate_timer_expired_st:
+      break;
+    case add_second_to_clock_st:
+      break;
+    default:
+      printf("clockControl_tick state update: hit default\n\r");
+      break;
+  }
+}
+
+

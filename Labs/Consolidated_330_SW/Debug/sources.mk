@@ -27,4 +27,5 @@ SUBDIRS := \
 supportFiles \
 src/switchesAndButtons \
 src/intervalTimer \
+src/clock \
 

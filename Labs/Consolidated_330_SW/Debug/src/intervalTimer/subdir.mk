@@ -4,16 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/intervalTimer/intervalTimer.c \
-../src/intervalTimer/intervalTimerMain.c 
+../src/intervalTimer/intervalTimer.c 
 
 OBJS += \
-./src/intervalTimer/intervalTimer.o \
-./src/intervalTimer/intervalTimerMain.o 
+./src/intervalTimer/intervalTimer.o 
 
 C_DEPS += \
-./src/intervalTimer/intervalTimer.d \
-./src/intervalTimer/intervalTimerMain.d 
+./src/intervalTimer/intervalTimer.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

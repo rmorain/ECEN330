@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="64" y="64">
+<window height="768" maximized="true" width="1024" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -39,42 +39,37 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimerMain.c" partName="intervalTimerMain.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c" title="intervalTimerMain.c" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="459" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clockMain.c" partName="clockMain.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockMain.c" title="clockMain.c" tooltip="Consolidated_330_SW/src/clock/clockMain.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockMain.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="138" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.c" partName="intervalTimer.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/intervalTimer/intervalTimer.c" title="intervalTimer.c" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="445" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clockDisplay.h" partName="clockDisplay.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockDisplay.h" title="clockDisplay.h" tooltip="Consolidated_330_SW/src/clock/clockDisplay.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockDisplay.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="56" selectionOffset="543" selectionTopPixel="84"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.h" partName="intervalTimer.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/intervalTimer/intervalTimer.h" title="intervalTimer.h" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="24" selectionOffset="433" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="clockDisplay.c" partName="clockDisplay.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockDisplay.c" title="clockDisplay.c" tooltip="Consolidated_330_SW/src/clock/clockDisplay.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockDisplay.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="248" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" partName="xil_io.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xil_io.h" title="xil_io.h" tooltip="Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xil_io.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xil_io.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="8670" selectionTopPixel="3640"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clockControl.h" partName="clockControl.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockControl.h" title="clockControl.h" tooltip="Consolidated_330_SW/src/clock/clockControl.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockControl.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xparameters.h" title="xparameters.h" tooltip="Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xparameters.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="560"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/helloWorld/main.c" title="main.c" tooltip="Consolidated_330_SW/src/helloWorld/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/helloWorld/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="57" selectionOffset="581" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="switches.h" partName="switches.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/switchesAndButtons/switches.h" title="switches.h" tooltip="Consolidated_330_SW/src/switchesAndButtons/switches.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/switchesAndButtons/switches.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="127" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="display.cpp" partName="display.cpp" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/supportFiles/display.cpp" title="display.cpp" tooltip="Consolidated_330_SW/supportFiles/display.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/supportFiles/display.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="switches.c" partName="switches.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/switchesAndButtons/switches.c" title="switches.c" tooltip="Consolidated_330_SW/src/switchesAndButtons/switches.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/switchesAndButtons/switches.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="48" selectionOffset="212" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.c" partName="buttons.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/switchesAndButtons/buttons.c" title="buttons.c" tooltip="Consolidated_330_SW/src/switchesAndButtons/buttons.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="785" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="display.h" partName="display.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/supportFiles/display.h" title="display.h" tooltip="Consolidated_330_SW/supportFiles/display.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/supportFiles/display.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3685" selectionTopPixel="1121"/>
 </editor>
 </editors>
 <views>
@@ -96,6 +91,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -195,7 +191,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.12414877" ratioLeft="237" ratioRight="1672" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7488152" ratioLeft="474" ratioRight="159" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6247241" ratioLeft="566" ratioRight="340" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -211,7 +207,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b2d86b2" ratio="0.49933246" ratioLeft="374" ratioRight="375" relationship="2" relative="bottom">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b2d86b2" ratio="0.706411" ratioLeft="1179" ratioRight="490" relationship="2" relative="bottom">
 <folder activePageID="com.xilinx.sdk.logger.SdkLogView" appearance="2" expanded="2">
 <page content="com.xilinx.sdk.logger.SdkLogView" label="SDK Log"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -244,171 +240,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/buttons.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/switches.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/switches.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xil_io.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xparameters.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/switches.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/switches.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW_bsp/ps7_cortexa9_0/include/xil_io.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/clock/clockMain.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/clock/clockDisplay.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/clock/clockDisplay.c"/>
 </editors>
-<item historyLabel="switches.h" index="4">
-<position info="not_deleted" x="146" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="switches.c" index="5">
-<position info="not_deleted" x="102" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.c" index="6">
-<position info="not_deleted" x="102" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.h" index="2">
-<position info="not_deleted" x="205" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="3941" y="0"/>
 </item>
-<item historyLabel="buttons.c" index="6">
-<position info="not_deleted" x="102" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.h" index="2">
-<position info="not_deleted" x="205" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.c" index="6">
-<position info="not_deleted" x="1140" y="4"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.h" index="2">
-<position info="not_deleted" x="205" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.c" index="6">
-<position info="not_deleted" x="1140" y="4"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="buttons.h" index="2">
-<position info="not_deleted" x="136" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5536" y="64"/>
 </item>
-<item historyLabel="xil_io.h" index="7">
-<position info="not_deleted" x="82" y="0"/>
+<item historyLabel="clockMain.c" index="0">
+<position info="not_deleted" x="125" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="clockMain.c" index="0">
+<position/>
 </item>
-<item historyLabel="intervalTimer.h" index="3">
-<position info="not_deleted" x="433" y="24"/>
+<item historyLabel="clockDisplay.h" index="1">
+<position info="not_deleted" x="543" y="56"/>
 </item>
-<item historyLabel="xparameters.h" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="clockMain.c" index="0">
+<position info="not_deleted" x="138" y="0"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="182" y="0"/>
+<item historyLabel="clockDisplay.h" index="1">
+<position info="not_deleted" x="543" y="56"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5536" y="64"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4758" y="0"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="647" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="89" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4957" y="0"/>
 </item>
-<item historyLabel="switches.h" index="9">
-<position info="not_deleted" x="4" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5334" y="0"/>
 </item>
-<item historyLabel="switches.c" index="10">
-<position info="not_deleted" x="4" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4873" y="0"/>
 </item>
-<item historyLabel="xil_io.h" index="7">
-<position info="not_deleted" x="82" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4729" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4680" y="0"/>
 </item>
-<item historyLabel="switches.c" index="10">
-<position info="not_deleted" x="4" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4966" y="0"/>
 </item>
-<item historyLabel="intervalTimer.h" index="3">
-<position info="not_deleted" x="433" y="24"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4984" y="0"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="89" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5449" y="0"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="282" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5916" y="0"/>
 </item>
-<item historyLabel="intervalTimer.h" index="3">
-<position info="not_deleted" x="433" y="24"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5833" y="0"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="282" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5886" y="0"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="174" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="switches.h" index="9">
-<position info="not_deleted" x="127" y="19"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="282" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="5981" y="0"/>
 </item>
-<item historyLabel="switches.h" index="9">
-<position info="not_deleted" x="127" y="19"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="switches.c" index="10">
-<position info="not_deleted" x="212" y="48"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4538" y="0"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="271" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4957" y="0"/>
 </item>
-<item historyLabel="xil_io.h" index="7">
-<position info="not_deleted" x="8703" y="31"/>
+<item historyLabel="clockDisplay.h" index="1">
+<position info="not_deleted" x="543" y="56"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="0">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockMain.c" index="0">
+<position info="not_deleted" x="138" y="0"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="271" y="0"/>
+<item historyLabel="clockDisplay.h" index="1">
+<position info="not_deleted" x="543" y="56"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="441" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4957" y="0"/>
 </item>
-<item historyLabel="xil_io.h" index="11">
-<position info="not_deleted" x="8670" y="3"/>
+<item historyLabel="clockMain.c" index="0">
+<position info="not_deleted" x="138" y="0"/>
 </item>
-<item historyLabel="buttons.c" index="12">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4957" y="0"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="13">
-<position info="not_deleted" x="46" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="4536" y="0"/>
 </item>
-<item historyLabel="intervalTimerMain.c" index="13">
-<position info="not_deleted" x="184" y="0"/>
+<item historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="6047" y="0"/>
 </item>
-<item historyLabel="intervalTimer.c" index="1">
-<position info="not_deleted" x="443" y="0"/>
+<item historyLabel="clockMain.c" index="0">
+<position info="not_deleted" x="138" y="0"/>
 </item>
-<item historyLabel="intervalTimer.h" index="14">
-<position info="not_deleted" x="433" y="24"/>
+<item historyLabel="clockDisplay.h" index="1">
+<position info="not_deleted" x="543" y="56"/>
 </item>
-<item active="true" historyLabel="intervalTimerMain.c" index="13">
-<position info="not_deleted" x="184" y="0"/>
+<item active="true" historyLabel="clockDisplay.c" index="2">
+<position info="not_deleted" x="6047" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -427,6 +411,30 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="display.h" tooltip="Consolidated_330_SW/supportFiles/display.h">
+<persistable path="/Consolidated_330_SW/supportFiles/display.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="display.cpp" tooltip="Consolidated_330_SW/supportFiles/display.cpp">
+<persistable path="/Consolidated_330_SW/supportFiles/display.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Consolidated_330_SW/src/helloWorld/main.c">
+<persistable path="/Consolidated_330_SW/src/helloWorld/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockControl.h" tooltip="Consolidated_330_SW/src/clock/clockControl.h">
+<persistable path="/Consolidated_330_SW/src/clock/clockControl.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockDisplay.c" tooltip="Consolidated_330_SW/src/clock/clockDisplay.c">
+<persistable path="/Consolidated_330_SW/src/clock/clockDisplay.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockDisplay.h" tooltip="Consolidated_330_SW/src/clock/clockDisplay.h">
+<persistable path="/Consolidated_330_SW/src/clock/clockDisplay.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockMain.c" tooltip="Consolidated_330_SW/src/clock/clockMain.c">
+<persistable path="/Consolidated_330_SW/src/clock/clockMain.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockControl.c" tooltip="Consolidated_330_SW/src/clock/clockControl.c">
+<persistable path="/Consolidated_330_SW/src/clock/clockControl.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.c" tooltip="Consolidated_330_SW/src/switchesAndButtons/buttons.c">
 <persistable path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
 </file>
@@ -447,30 +455,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.c" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.c">
 <persistable path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimerMain.c" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c">
-<persistable path="/Consolidated_330_SW/src/intervalTimer/intervalTimerMain.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="switchesAndButtonsLabMain.c" tooltip="Consolidated_330_SW/src/switchesAndButtons/switchesAndButtonsLabMain.c">
-<persistable path="/Consolidated_330_SW/src/switchesAndButtons/switchesAndButtonsLabMain.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="display.h" tooltip="Consolidated_330_SW/supportFiles/display.h">
-<persistable path="/Consolidated_330_SW/supportFiles/display.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="circularBuffer.h" tooltip="Consolidated_330_SW/supportFiles/circularBuffer.h">
-<persistable path="/Consolidated_330_SW/supportFiles/circularBuffer.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="display.cpp" tooltip="Consolidated_330_SW/supportFiles/display.cpp">
-<persistable path="/Consolidated_330_SW/supportFiles/display.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Consolidated_330_SW/src/helloWorld/main.c">
-<persistable path="/Consolidated_330_SW/src/helloWorld/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.h" tooltip="Consolidated_330_SW/supportFiles/lcd.h">
-<persistable path="/Consolidated_330_SW/supportFiles/lcd.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="leds.h" tooltip="Consolidated_330_SW/supportFiles/leds.h">
-<persistable path="/Consolidated_330_SW/supportFiles/leds.h"/>
 </file>
 </mruList>
 </workbench>

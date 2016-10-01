@@ -13,18 +13,23 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Out" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
-			<item value="out"/>
-			<item value="in32"/>
-			<item value="XPAR"/>
-			<item value="base"/>
-			<item value="printf"/>
-			<item value="refresh"/>
-			<item value="display_println"/>
-			<item value="text"/>
+			<item value="while"/>
+			<item value="NUM_CHAR_DISPLAY"/>
+			<item value="msWait"/>
+			<item value="prevDisplayedTime"/>
+			<item value="curDisplayedTime"/>
+			<item value="triangle"/>
+			<item value="arrow"/>
+			<item value="width"/>
 		</list>
 		<list key="replacehistory">
+			<item value="NUM_DISPLAY_CHARS"/>
+			<item value="msDelay"/>
+			<item value="displayedTime"/>
+			<item value="currentTime"/>
+			<item value="ARROW"/>
 		</list>
 	</section>
 </section>

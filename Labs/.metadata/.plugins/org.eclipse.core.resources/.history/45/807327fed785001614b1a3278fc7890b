@@ -1,0 +1,17 @@
+/*
+ * clockMain.c
+ *
+ *  Created on: Sep 28, 2016
+ *      Author: cdmoo
+ */
+#include "clockDisplay.h"
+
+
+int main() {
+    clock_displayRunTest();
+}
+
+void isr_function(){}
+
+
+

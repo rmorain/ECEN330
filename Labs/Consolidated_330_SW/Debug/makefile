@@ -11,6 +11,7 @@ RM := rm -rf
 -include supportFiles/subdir.mk
 -include src/switchesAndButtons/subdir.mk
 -include src/intervalTimer/subdir.mk
+-include src/clock/subdir.mk
 -include subdir.mk
 -include objects.mk
 
