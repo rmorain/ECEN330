@@ -50,15 +50,6 @@
 #define CURSOR_POS_X6 ARROW_OFFSET_X2
 // 8th cursor position for writing clock text
 #define CURSOR_POS_X7 (CURSOR_POS_X6 + ARROW_WIDTH / 2)
-#define MAX_MINUTES 59 // max number of minutes before clock rolls over
-#define MAX_HOURS 12 // max number of hours before clock rolls over
-#define MAX_SECONDS 59 // max number of seconds in a minute
-#define MIN_HOURS 1 // minimum number of hours set after rollover
-#define NO_FORCE_UPDATE_ALL 0 // boolean to be passed into updateClock to assure that all
-                              // digits are not updated, only the digits that have changed
-#define FORCE_UPDATE_ALL 1 // boolean to be passed into updateClock to make sure that all digits are rewritten
-#define TEST_DELAY 1000 // number of miliseconds to wait in between each update invocation during testing
-#define TEST_DELAY_SMALL 100 // number of miliseconds to wait during timekeeping X10 during testing
 
 // the following three constants are for dividing the screen into the six pre-defined touch
 // zones corresponding to the increment and decrement of hours, minutes, and seconds
@@ -113,7 +104,7 @@ void clockDisplay_init() {
     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
 
     // update the time display to display the current time string
-    clockDisplay_updateTimeDisplay(FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(1);
 }
 
 // in charge of erasing a previously displayed character and writing a new character
@@ -159,22 +150,22 @@ void clockDisplay_updateTimeDisplay(bool forceUpdateAll) {
 // called either when minutes max out at 60 or when a user is autoincrementing the hours
 void incrementHours() {
     // if the hours have not reached 12
-    if(hours < MAX_HOURS) {
+    if(hours < 12) {
         // increment the hours
         hours++;
     }
     else {
         // if the hours have reached the limit of 12, set them back to 1
-        hours = MIN_HOURS;
+        hours = 1;
     }
     // rerender the display after changes have been made
-    clockDisplay_updateTimeDisplay(NO_FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(0);
 }
 
 // called either when seconds max out at 60 or when a user is autoincrementing the minutes
 void incrementMinutes() {
     // if the minutes have not reached the max of 59
-    if(minutes < MAX_MINUTES) {
+    if(minutes < 59) {
         // increment them
         minutes++;
     }
@@ -185,13 +176,13 @@ void incrementMinutes() {
         incrementHours();
     }
     // rerender the display after changes have been made
-    clockDisplay_updateTimeDisplay(NO_FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(0);
 }
 
 // called by the control module to advance time forward or by the user to set time
 void incrementSeconds() {
     // if the seconds have not reached the max of 59
-    if(seconds < MAX_SECONDS) {
+    if(seconds < 59) {
         // increment them
         seconds++;
     }
@@ -202,22 +193,22 @@ void incrementSeconds() {
         incrementMinutes();
     }
     // rerender the display after changes have been made
-    clockDisplay_updateTimeDisplay(NO_FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(0);
 }
 
 // called when the user is manually setting hours
 void decrementHours() {
     // if the hours have not reached the minimum of 1
-    if(hours > MIN_HOURS ) {
+    if(hours > 1 ) {
         // decrement the hours
         hours--;
     }
     else {
         // otherwise reset the hours to 12
-        hours = MAX_HOURS;
+        hours = 12;
     }
     // rerender the display after changes have been made
-    clockDisplay_updateTimeDisplay(NO_FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(0);
 }
 
 // called when the user is manually setting minutes
@@ -229,12 +220,12 @@ void decrementMinutes() {
     }
     else {
         // otherwise rollover the minutes to 59
-        minutes = MAX_MINUTES;
+        minutes = 59;
         // and decrement the hours
         decrementHours();
     }
     // rerender the display after changes have been made
-    clockDisplay_updateTimeDisplay(NO_FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(0);
 }
 
 // called when the user is manually setting seconds
@@ -246,12 +237,12 @@ void decrementSeconds() {
     }
     else {
         // otherwise rollover the seconds to 59
-        seconds = MAX_SECONDS;
+        seconds = 59;
         // and decrement them
         decrementMinutes();
     }
     // rerender the display after changes have been made
-    clockDisplay_updateTimeDisplay(NO_FORCE_UPDATE_ALL);
+    clockDisplay_updateTimeDisplay(0);
 }
 
 // processes touch data and executes the appropriate action depending on the user touch
@@ -309,28 +300,28 @@ void clockDisplay_runTest() {
 
     // test increment hours and delay 1 second
     incrementHours();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test deccrement hours and delay 1 second
     decrementHours();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test increment minutes and delay 1 second
     incrementMinutes();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test deccrement minutes and delay 1 second
     decrementMinutes();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test increment seconds and delay 1 second
     incrementSeconds();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test deccrement seconds and delay 1 second
     decrementSeconds();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
 
     // at a speed of once per tenth of a second, increment seconds
     // and check the rollover into minutes
     for(int i = 0; i < 100; i++) {
         incrementSeconds();
-        utils_msDelay(TEST_DELAY_SMALL);
+        utils_msDelay(100);
     }
 }
 

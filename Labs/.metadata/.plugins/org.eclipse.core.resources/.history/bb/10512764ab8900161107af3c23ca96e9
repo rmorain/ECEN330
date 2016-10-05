@@ -34,12 +34,12 @@
 
 #include "xparameters.h"
 
-#define TOTAL_SECONDS 20
+#define TOTAL_SECONDS 60
 // The formula for computing the load value is based upon the formula from 4.1.1 (calculating timer intervals)
 // in the Cortex-A9 MPCore Technical Reference Manual 4-2.
 // Assuming that the prescaler = 0, the formula for computing the load value based upon the desired period is:
 // load-value = (period * timer-clock) - 1
-#define TIMER_PERIOD 50.0E-3
+#define TIMER_PERIOD 20.0E-3
 #define TIMER_CLOCK_FREQUENCY (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2)
 #define TIMER_LOAD_VALUE ((TIMER_PERIOD * TIMER_CLOCK_FREQUENCY) - 1.0)
 

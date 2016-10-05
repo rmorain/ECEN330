@@ -57,8 +57,6 @@
 #define NO_FORCE_UPDATE_ALL 0 // boolean to be passed into updateClock to assure that all
                               // digits are not updated, only the digits that have changed
 #define FORCE_UPDATE_ALL 1 // boolean to be passed into updateClock to make sure that all digits are rewritten
-#define TEST_DELAY 1000 // number of miliseconds to wait in between each update invocation during testing
-#define TEST_DELAY_SMALL 100 // number of miliseconds to wait during timekeeping X10 during testing
 
 // the following three constants are for dividing the screen into the six pre-defined touch
 // zones corresponding to the increment and decrement of hours, minutes, and seconds
@@ -309,28 +307,28 @@ void clockDisplay_runTest() {
 
     // test increment hours and delay 1 second
     incrementHours();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test deccrement hours and delay 1 second
     decrementHours();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test increment minutes and delay 1 second
     incrementMinutes();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test deccrement minutes and delay 1 second
     decrementMinutes();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test increment seconds and delay 1 second
     incrementSeconds();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
     // test deccrement seconds and delay 1 second
     decrementSeconds();
-    utils_msDelay(TEST_DELAY);
+    utils_msDelay(1000);
 
     // at a speed of once per tenth of a second, increment seconds
     // and check the rollover into minutes
     for(int i = 0; i < 100; i++) {
         incrementSeconds();
-        utils_msDelay(TEST_DELAY_SMALL);
+        utils_msDelay(100);
     }
 }
 

@@ -8,7 +8,7 @@
 #include "clockDisplay.h"
 #include "supportFiles/display.h"
 
-#define TIMER_PERIOD 50 // the current period of each interrupt
+#define TIMER_PERIOD 40 // the current period of each interrupt
 // the maximum time in ms of the adc counter divided by the interrupt period
 #define ADC_COUNTER_MAX (50 / TIMER_PERIOD)
 // the maximum time in ms of the auto-increment counter divided by the interrupt period
@@ -91,6 +91,7 @@ void clockControl_tick() {
         break;
     default:
         // catch any erroneous state transfers and print the results
+        printf("clockControl_tick state action: hit default\n\r");
         break;
   }
 
@@ -192,6 +193,7 @@ void clockControl_tick() {
         break;
     default:
         // catch any erroneous state transfers and print the results
+        printf("clockControl_tick state update: hit default\n\r");
         break;
   }
 

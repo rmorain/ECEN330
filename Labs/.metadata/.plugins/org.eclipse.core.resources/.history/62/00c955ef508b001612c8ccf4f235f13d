@@ -91,6 +91,7 @@ void clockControl_tick() {
         break;
     default:
         // catch any erroneous state transfers and print the results
+        printf("clockControl_tick state action: hit default\n\r");
         break;
   }
 
@@ -192,6 +193,7 @@ void clockControl_tick() {
         break;
     default:
         // catch any erroneous state transfers and print the results
+        printf("clockControl_tick state update: hit default\n\r");
         break;
   }
 

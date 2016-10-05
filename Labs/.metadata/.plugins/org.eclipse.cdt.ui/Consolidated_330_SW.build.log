@@ -1,9 +1,45 @@
-22:47:44 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+17:23:15 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
 make all 
-'Building file: ../src/clock/clockControl.c'
+'Building file: ../src/clock/clockDisplay.c'
 'Invoking: ARM g++ compiler'
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
-'Finished building: ../src/clock/clockControl.c'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/clock/clockDisplay.c'
 ' '
 'Building target: Consolidated_330_SW.elf'
 'Invoking: ARM g++ linker'
@@ -13,9 +49,9 @@ arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp
 'Invoking: ARM Print Size'
 arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 207820	   3192	6010280	6221292	 5eedec	Consolidated_330_SW.elf
+ 207440	   3192	6010272	6220904	 5eec68	Consolidated_330_SW.elf
 'Finished building: Consolidated_330_SW.elf.size'
 ' '
 
-22:47:45 Build Finished (took 1s.347ms)
+17:23:16 Build Finished (took 1s.524ms)
 

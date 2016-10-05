@@ -16109,3 +16109,793 @@ arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size
  207820	   3192	6010280	6221292	 5eedec	Consolidated_330_SW.elf
 'Finished building: Consolidated_330_SW.elf.size'
 ' '
+14:32:21 **** Clean-only build of configuration Debug for project Consolidated_330_SW ****
+make clean 
+rm -rf  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o  ./supportFiles/bluetooth.d ./supportFiles/circularBuffer.d ./supportFiles/glcdfont.d ./supportFiles/globalTimer.d ./supportFiles/interrupts.d ./supportFiles/lcd.d ./supportFiles/leds.d ./supportFiles/mio.d ./supportFiles/spi.d ./supportFiles/tftGpio.d  ./src/switchesAndButtons/buttons.d ./src/switchesAndButtons/switches.d  ./src/intervalTimer/intervalTimer.d  ./src/clock/clockControl.d ./src/clock/clockDisplay.d ./src/clock/clockMain.d  ./supportFiles/Adafruit_GFX.d ./supportFiles/Adafruit_STMPE610.d ./supportFiles/Adafruit_TFTLCD.d ./supportFiles/Print.d ./supportFiles/WString.d ./supportFiles/display.d ./supportFiles/new.d ./supportFiles/utils.d  Consolidated_330_SW.elf.size  Consolidated_330_SW.elf
+' '
+14:32:22 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../supportFiles/Adafruit_GFX.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Adafruit_GFX.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Adafruit_GFX.d" -MT"supportFiles/Adafruit_GFX.d" -o "supportFiles/Adafruit_GFX.o" "../supportFiles/Adafruit_GFX.cpp"
+'Finished building: ../supportFiles/Adafruit_GFX.cpp'
+' '
+'Building file: ../supportFiles/Adafruit_STMPE610.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Adafruit_STMPE610.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Adafruit_STMPE610.d" -MT"supportFiles/Adafruit_STMPE610.d" -o "supportFiles/Adafruit_STMPE610.o" "../supportFiles/Adafruit_STMPE610.cpp"
+'Finished building: ../supportFiles/Adafruit_STMPE610.cpp'
+' '
+'Building file: ../supportFiles/Adafruit_TFTLCD.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Adafruit_TFTLCD.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Adafruit_TFTLCD.d" -MT"supportFiles/Adafruit_TFTLCD.d" -o "supportFiles/Adafruit_TFTLCD.o" "../supportFiles/Adafruit_TFTLCD.cpp"
+'Finished building: ../supportFiles/Adafruit_TFTLCD.cpp'
+' '
+'Building file: ../supportFiles/Print.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Print.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Print.d" -MT"supportFiles/Print.d" -o "supportFiles/Print.o" "../supportFiles/Print.cpp"
+'Finished building: ../supportFiles/Print.cpp'
+' '
+'Building file: ../supportFiles/WString.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/WString.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/WString.d" -MT"supportFiles/WString.d" -o "supportFiles/WString.o" "../supportFiles/WString.cpp"
+'Finished building: ../supportFiles/WString.cpp'
+' '
+'Building file: ../supportFiles/bluetooth.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/bluetooth.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/bluetooth.d" -MT"supportFiles/bluetooth.d" -o "supportFiles/bluetooth.o" "../supportFiles/bluetooth.c"
+'Finished building: ../supportFiles/bluetooth.c'
+' '
+'Building file: ../supportFiles/circularBuffer.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/circularBuffer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/circularBuffer.d" -MT"supportFiles/circularBuffer.d" -o "supportFiles/circularBuffer.o" "../supportFiles/circularBuffer.c"
+'Finished building: ../supportFiles/circularBuffer.c'
+' '
+'Building file: ../supportFiles/display.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/display.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/display.d" -MT"supportFiles/display.d" -o "supportFiles/display.o" "../supportFiles/display.cpp"
+'Finished building: ../supportFiles/display.cpp'
+' '
+'Building file: ../supportFiles/glcdfont.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/glcdfont.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/glcdfont.d" -MT"supportFiles/glcdfont.d" -o "supportFiles/glcdfont.o" "../supportFiles/glcdfont.c"
+'Finished building: ../supportFiles/glcdfont.c'
+' '
+'Building file: ../supportFiles/globalTimer.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/globalTimer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/globalTimer.d" -MT"supportFiles/globalTimer.d" -o "supportFiles/globalTimer.o" "../supportFiles/globalTimer.c"
+'Finished building: ../supportFiles/globalTimer.c'
+' '
+'Building file: ../supportFiles/interrupts.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/interrupts.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/interrupts.d" -MT"supportFiles/interrupts.d" -o "supportFiles/interrupts.o" "../supportFiles/interrupts.c"
+'Finished building: ../supportFiles/interrupts.c'
+' '
+'Building file: ../supportFiles/lcd.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/lcd.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/lcd.d" -MT"supportFiles/lcd.d" -o "supportFiles/lcd.o" "../supportFiles/lcd.c"
+'Finished building: ../supportFiles/lcd.c'
+' '
+'Building file: ../supportFiles/leds.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/leds.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/leds.d" -MT"supportFiles/leds.d" -o "supportFiles/leds.o" "../supportFiles/leds.c"
+'Finished building: ../supportFiles/leds.c'
+' '
+'Building file: ../supportFiles/mio.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/mio.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/mio.d" -MT"supportFiles/mio.d" -o "supportFiles/mio.o" "../supportFiles/mio.c"
+'Finished building: ../supportFiles/mio.c'
+' '
+'Building file: ../supportFiles/new.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/new.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/new.d" -MT"supportFiles/new.d" -o "supportFiles/new.o" "../supportFiles/new.cpp"
+'Finished building: ../supportFiles/new.cpp'
+' '
+'Building file: ../supportFiles/spi.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/spi.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/spi.d" -MT"supportFiles/spi.d" -o "supportFiles/spi.o" "../supportFiles/spi.c"
+'Finished building: ../supportFiles/spi.c'
+' '
+'Building file: ../supportFiles/tftGpio.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/tftGpio.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/tftGpio.d" -MT"supportFiles/tftGpio.d" -o "supportFiles/tftGpio.o" "../supportFiles/tftGpio.c"
+'Finished building: ../supportFiles/tftGpio.c'
+' '
+'Building file: ../supportFiles/utils.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/utils.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/utils.d" -MT"supportFiles/utils.d" -o "supportFiles/utils.o" "../supportFiles/utils.cpp"
+'Finished building: ../supportFiles/utils.cpp'
+' '
+'Building file: ../src/switchesAndButtons/buttons.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/switchesAndButtons/buttons.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/switchesAndButtons/buttons.d" -MT"src/switchesAndButtons/buttons.d" -o "src/switchesAndButtons/buttons.o" "../src/switchesAndButtons/buttons.c"
+'Finished building: ../src/switchesAndButtons/buttons.c'
+' '
+'Building file: ../src/switchesAndButtons/switches.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/switchesAndButtons/switches.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/switchesAndButtons/switches.d" -MT"src/switchesAndButtons/switches.d" -o "src/switchesAndButtons/switches.o" "../src/switchesAndButtons/switches.c"
+'Finished building: ../src/switchesAndButtons/switches.c'
+' '
+'Building file: ../src/intervalTimer/intervalTimer.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/intervalTimer/intervalTimer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/intervalTimer/intervalTimer.d" -MT"src/intervalTimer/intervalTimer.d" -o "src/intervalTimer/intervalTimer.o" "../src/intervalTimer/intervalTimer.c"
+../src/intervalTimer/intervalTimer.c: In function 'intervalTimer_status_t intervalTimer_test(uint32_t)':
+../src/intervalTimer/intervalTimer.c:219:35: warning: statement has no effect [-Wunused-value]
+         INTERVAL_TIMER_STATUS_FAIL;
+                                   ^
+../src/intervalTimer/intervalTimer.c:221:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/intervalTimer/intervalTimer.c'
+' '
+'Building file: ../src/clock/clockControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
+'Finished building: ../src/clock/clockControl.c'
+' '
+'Building file: ../src/clock/clockDisplay.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:103:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:103:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:103:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:103:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:103:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:103:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:105:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:105:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:105:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:105:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:105:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:105:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:140:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:140:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:140:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:140:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:140:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:140:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/clock/clockDisplay.c'
+' '
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207820	   3192	6010280	6221292	 5eedec	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:32:33 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:33:48 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:33:49 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:38:23 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
+'Finished building: ../src/clock/clockControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207820	   3192	6010280	6221292	 5eedec	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:38:35 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207820	   3192	6010280	6221292	 5eedec	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:38:41 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:38:42 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:41:13 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockDisplay.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/clock/clockDisplay.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207588	   3192	6010280	6221060	 5eed04	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:41:17 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:41:18 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:42:55 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:42:56 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:48:40 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:48:41 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:50:26 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207544	   3192	6010272	6221008	 5eecd0	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:50:36 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:50:37 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:53:09 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207544	   3192	6010272	6221008	 5eecd0	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:53:16 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
+'Finished building: ../src/clock/clockControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207544	   3192	6010272	6221008	 5eecd0	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:53:22 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:53:23 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:55:08 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
+'Finished building: ../src/clock/clockControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207544	   3192	6010272	6221008	 5eecd0	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:55:18 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207544	   3192	6010272	6221008	 5eecd0	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:55:29 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207544	   3192	6010272	6221008	 5eecd0	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+14:55:34 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:55:35 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:56:21 **** Incremental Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+make: Nothing to be done for `all'.
+14:56:22 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+17:09:40 **** Clean-only build of configuration Debug for project Consolidated_330_SW ****
+make clean 
+rm -rf  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o  ./supportFiles/bluetooth.d ./supportFiles/circularBuffer.d ./supportFiles/glcdfont.d ./supportFiles/globalTimer.d ./supportFiles/interrupts.d ./supportFiles/lcd.d ./supportFiles/leds.d ./supportFiles/mio.d ./supportFiles/spi.d ./supportFiles/tftGpio.d  ./src/switchesAndButtons/buttons.d ./src/switchesAndButtons/switches.d  ./src/intervalTimer/intervalTimer.d  ./src/clock/clockControl.d ./src/clock/clockDisplay.d ./src/clock/clockMain.d  ./supportFiles/Adafruit_GFX.d ./supportFiles/Adafruit_STMPE610.d ./supportFiles/Adafruit_TFTLCD.d ./supportFiles/Print.d ./supportFiles/WString.d ./supportFiles/display.d ./supportFiles/new.d ./supportFiles/utils.d  Consolidated_330_SW.elf.size  Consolidated_330_SW.elf
+' '
+17:09:41 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../supportFiles/Adafruit_GFX.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Adafruit_GFX.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Adafruit_GFX.d" -MT"supportFiles/Adafruit_GFX.d" -o "supportFiles/Adafruit_GFX.o" "../supportFiles/Adafruit_GFX.cpp"
+'Finished building: ../supportFiles/Adafruit_GFX.cpp'
+' '
+'Building file: ../supportFiles/Adafruit_STMPE610.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Adafruit_STMPE610.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Adafruit_STMPE610.d" -MT"supportFiles/Adafruit_STMPE610.d" -o "supportFiles/Adafruit_STMPE610.o" "../supportFiles/Adafruit_STMPE610.cpp"
+'Finished building: ../supportFiles/Adafruit_STMPE610.cpp'
+' '
+'Building file: ../supportFiles/Adafruit_TFTLCD.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Adafruit_TFTLCD.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Adafruit_TFTLCD.d" -MT"supportFiles/Adafruit_TFTLCD.d" -o "supportFiles/Adafruit_TFTLCD.o" "../supportFiles/Adafruit_TFTLCD.cpp"
+'Finished building: ../supportFiles/Adafruit_TFTLCD.cpp'
+' '
+'Building file: ../supportFiles/Print.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/Print.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/Print.d" -MT"supportFiles/Print.d" -o "supportFiles/Print.o" "../supportFiles/Print.cpp"
+'Finished building: ../supportFiles/Print.cpp'
+' '
+'Building file: ../supportFiles/WString.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/WString.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/WString.d" -MT"supportFiles/WString.d" -o "supportFiles/WString.o" "../supportFiles/WString.cpp"
+'Finished building: ../supportFiles/WString.cpp'
+' '
+'Building file: ../supportFiles/bluetooth.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/bluetooth.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/bluetooth.d" -MT"supportFiles/bluetooth.d" -o "supportFiles/bluetooth.o" "../supportFiles/bluetooth.c"
+'Finished building: ../supportFiles/bluetooth.c'
+' '
+'Building file: ../supportFiles/circularBuffer.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/circularBuffer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/circularBuffer.d" -MT"supportFiles/circularBuffer.d" -o "supportFiles/circularBuffer.o" "../supportFiles/circularBuffer.c"
+'Finished building: ../supportFiles/circularBuffer.c'
+' '
+'Building file: ../supportFiles/display.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/display.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/display.d" -MT"supportFiles/display.d" -o "supportFiles/display.o" "../supportFiles/display.cpp"
+'Finished building: ../supportFiles/display.cpp'
+' '
+'Building file: ../supportFiles/glcdfont.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/glcdfont.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/glcdfont.d" -MT"supportFiles/glcdfont.d" -o "supportFiles/glcdfont.o" "../supportFiles/glcdfont.c"
+'Finished building: ../supportFiles/glcdfont.c'
+' '
+'Building file: ../supportFiles/globalTimer.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/globalTimer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/globalTimer.d" -MT"supportFiles/globalTimer.d" -o "supportFiles/globalTimer.o" "../supportFiles/globalTimer.c"
+'Finished building: ../supportFiles/globalTimer.c'
+' '
+'Building file: ../supportFiles/interrupts.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/interrupts.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/interrupts.d" -MT"supportFiles/interrupts.d" -o "supportFiles/interrupts.o" "../supportFiles/interrupts.c"
+'Finished building: ../supportFiles/interrupts.c'
+' '
+'Building file: ../supportFiles/lcd.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/lcd.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/lcd.d" -MT"supportFiles/lcd.d" -o "supportFiles/lcd.o" "../supportFiles/lcd.c"
+'Finished building: ../supportFiles/lcd.c'
+' '
+'Building file: ../supportFiles/leds.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/leds.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/leds.d" -MT"supportFiles/leds.d" -o "supportFiles/leds.o" "../supportFiles/leds.c"
+'Finished building: ../supportFiles/leds.c'
+' '
+'Building file: ../supportFiles/mio.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/mio.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/mio.d" -MT"supportFiles/mio.d" -o "supportFiles/mio.o" "../supportFiles/mio.c"
+'Finished building: ../supportFiles/mio.c'
+' '
+'Building file: ../supportFiles/new.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/new.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/new.d" -MT"supportFiles/new.d" -o "supportFiles/new.o" "../supportFiles/new.cpp"
+'Finished building: ../supportFiles/new.cpp'
+' '
+'Building file: ../supportFiles/spi.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/spi.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/spi.d" -MT"supportFiles/spi.d" -o "supportFiles/spi.o" "../supportFiles/spi.c"
+'Finished building: ../supportFiles/spi.c'
+' '
+'Building file: ../supportFiles/tftGpio.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/tftGpio.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/tftGpio.d" -MT"supportFiles/tftGpio.d" -o "supportFiles/tftGpio.o" "../supportFiles/tftGpio.c"
+'Finished building: ../supportFiles/tftGpio.c'
+' '
+'Building file: ../supportFiles/utils.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"supportFiles/utils.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"supportFiles/utils.d" -MT"supportFiles/utils.d" -o "supportFiles/utils.o" "../supportFiles/utils.cpp"
+'Finished building: ../supportFiles/utils.cpp'
+' '
+'Building file: ../src/switchesAndButtons/buttons.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/switchesAndButtons/buttons.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/switchesAndButtons/buttons.d" -MT"src/switchesAndButtons/buttons.d" -o "src/switchesAndButtons/buttons.o" "../src/switchesAndButtons/buttons.c"
+'Finished building: ../src/switchesAndButtons/buttons.c'
+' '
+'Building file: ../src/switchesAndButtons/switches.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/switchesAndButtons/switches.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/switchesAndButtons/switches.d" -MT"src/switchesAndButtons/switches.d" -o "src/switchesAndButtons/switches.o" "../src/switchesAndButtons/switches.c"
+'Finished building: ../src/switchesAndButtons/switches.c'
+' '
+'Building file: ../src/intervalTimer/intervalTimer.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/intervalTimer/intervalTimer.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/intervalTimer/intervalTimer.d" -MT"src/intervalTimer/intervalTimer.d" -o "src/intervalTimer/intervalTimer.o" "../src/intervalTimer/intervalTimer.c"
+../src/intervalTimer/intervalTimer.c: In function 'intervalTimer_status_t intervalTimer_test(uint32_t)':
+../src/intervalTimer/intervalTimer.c:219:35: warning: statement has no effect [-Wunused-value]
+         INTERVAL_TIMER_STATUS_FAIL;
+                                   ^
+../src/intervalTimer/intervalTimer.c:221:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/intervalTimer/intervalTimer.c'
+' '
+'Building file: ../src/clock/clockControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
+'Finished building: ../src/clock/clockControl.c'
+' '
+'Building file: ../src/clock/clockDisplay.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:62:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:102:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:104:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:135:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/clock/clockDisplay.c'
+' '
+'Building file: ../src/clock/clockMain.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockMain.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockMain.d" -MT"src/clock/clockMain.d" -o "src/clock/clockMain.o" "../src/clock/clockMain.c"
+'Finished building: ../src/clock/clockMain.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207536	   3192	6010272	6221000	 5eecc8	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+17:10:41 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockControl.d" -MT"src/clock/clockControl.d" -o "src/clock/clockControl.o" "../src/clock/clockControl.c"
+'Finished building: ../src/clock/clockControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207440	   3192	6010272	6220904	 5eec68	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+17:20:29 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockDisplay.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:114:52: error: too few arguments to function 'void clockDisplay_updateTimeDisplay(bool)'
+     clockDisplay_updateTimeDisplay(FORCE_UPDATE_ALL);
+                                                    ^
+In file included from ../src/clock/clockDisplay.c:7:0:
+../src/clock/clockDisplay.h:21:6: note: declared here
+ void clockDisplay_updateTimeDisplay(bool forceUpdateAll);
+      ^
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+make: *** [src/clock/clockDisplay.o] Error 1
+17:21:30 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockDisplay.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:69:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:109:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:142:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/clock/clockDisplay.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207440	   3192	6010272	6220904	 5eec68	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
+17:23:15 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/clock/clockDisplay.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/clock/clockDisplay.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/clock/clockDisplay.d" -MT"src/clock/clockDisplay.d" -o "src/clock/clockDisplay.o" "../src/clock/clockDisplay.c"
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.9e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+         CURSOR_POS_X2, CURSOR_POS_X3, CURSOR_POS_X4, CURSOR_POS_X5, CURSOR_POS_X6, CURSOR_POS_X7};
+                                                                                                 ^
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '5.5e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '9.1e+1' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.24e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.6e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '1.96e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '2.29e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c:71:97: warning: narrowing conversion of '2.65e+2' from 'double' to 'const uint32_t {aka const long unsigned int}' inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_init()':
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(currentTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                      ^
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:111:70: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(displayedTime, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                                        ^
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:113:72: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c: In function 'void clockDisplay_updateTimeDisplay(bool)':
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     sprintf(temp, "%02hd:%02hd:%02hd", hours, minutes, seconds);
+                                                               ^
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+../src/clock/clockDisplay.c:144:63: warning: format '%hd' expects argument of type 'int', but argument 5 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/clock/clockDisplay.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o ./src/clock/clockMain.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Consolidated_330_SW.elf  |tee "Consolidated_330_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207440	   3192	6010272	6220904	 5eec68	Consolidated_330_SW.elf
+'Finished building: Consolidated_330_SW.elf.size'
+' '
