@@ -9,6 +9,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include supportFiles/subdir.mk
+-include src/ticTacToe/subdir.mk
 -include src/switchesAndButtons/subdir.mk
 -include src/intervalTimer/subdir.mk
 -include src/clock/subdir.mk
@@ -40,7 +41,6 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 ELFSIZE += \
-Consolidated_330_SW.elf.size \
 
 
 # All Target

@@ -1,0 +1,217 @@
+/*
+ * ticTacToeControl.c
+ *
+ *  Created on: Oct 22, 2016
+ *      Author: cdmoo
+ */
+
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "ticTacToeDisplay.h"
+#include "supportFiles/display.h"
+#include "minimax.h"
+#include "minimaxTest.h"
+#include "../switchesAndButtons/buttons.h"
+
+#define TIMER_PERIOD 50 // the current period of each interrupt
+// the maximum time in ms of the adc counter divided by the interrupt period
+#define ADC_COUNTER_MAX (50 / TIMER_PERIOD)
+#define SPLASH_SCREEN_COUNTER_MAX (1000 / TIMER_PERIOD)
+#define FIRST_MOVE_COUNTER_MAX (5000 / TIMER_PERIOD)
+
+
+// States for the controller state machine.
+typedef enum gameControl_st_t {
+    init_st,                 // Start here, stay in this state for just one tick.
+    splash_screen_st,
+    waiting_first_move_st,
+    adc_counter_running_st,     // waiting for the touch-controller ADC to settle.
+    player_turn_waiting_st,
+    evaluate_player_move_st,
+    computer_turn_st,
+    end_game_st
+} gameControl_st_t;
+static gameControl_st_t currentState = init_st;
+
+static uint32_t adcCounter;
+static uint32_t splashScreenCounter;
+static uint32_t firstMoveCounter;
+
+static bool isPlayerTurn;
+static bool isPlayerX;
+static minimax_board_t gameBoard;
+static minimax_move_t computerNextMove;
+static minimax_move_t playerNextMove;
+static minimax_score_t currentScore;
+
+static void debugStatePrint();
+static bool isPlayerMoveValid();
+static void playNextMove();
+
+void ticTacToeControl_tick() {
+    //perform state action first
+    switch(currentState) {
+        case init_st:
+            break;
+        case splash_screen_st:
+            splashScreenCounter++;
+            break;
+        case waiting_first_move_st:
+            firstMoveCounter++;
+            break;
+        case adc_counter_running_st:
+            adcCounter++;
+            break;
+        case player_turn_waiting_st:
+            isPlayerTurn = true;
+            break;
+        case evaluate_player_move_st:
+            ticTacToeDisplay_touchScreenComputeBoardRowColumn(&playerNextMove.row, &playerNextMove.column);
+            currentScore = minimax_computeBoardScore(&gameBoard, isPlayerTurn);
+            break;
+        case computer_turn_st:
+            isPlayerTurn = false;
+            minimax_computeNextMove(&gameBoard, !isPlayerX, &computerNextMove.row, &computerNextMove.column);
+            playNextMove();
+            currentScore = minimax_computeBoardScore(&gameBoard, isPlayerTurn);
+            break;
+        case end_game_st:
+            break;
+    }
+
+    // perform state update next
+    switch(currentState) {
+        case init_st:
+            ticTacToeDisplay_drawSplashScreen();
+            currentState = splash_screen_st;
+            break;
+        case splash_screen_st:
+            if(splashScreenCounter >= SPLASH_SCREEN_COUNTER_MAX) {
+                ticTacToeDisplay_clearSplashScreen();
+                ticTacToeDisplay_drawBoardLines();
+                minimax_initBoard(&gameBoard);
+                currentState = waiting_first_move_st;
+            }
+            break;
+        case waiting_first_move_st:
+            if(display_isTouched()) {
+                isPlayerX = true;
+                isPlayerTurn = true;
+                display_clearOldTouchData();
+                currentState = adc_counter_running_st;
+            }
+            if(firstMoveCounter >= FIRST_MOVE_COUNTER_MAX) {
+                isPlayerX = false;
+                currentState = computer_turn_st;
+            }
+            break;
+        case adc_counter_running_st:
+            if(!display_isTouched() && adcCounter >= ADC_COUNTER_MAX) {
+                currentState = player_turn_waiting_st;
+            } else if(display_isTouched() && adcCounter >= ADC_COUNTER_MAX) {
+                currentState = evaluate_player_move_st;
+            }
+            break;
+        case player_turn_waiting_st:
+            if(display_isTouched()) {
+                display_clearOldTouchData();
+                currentState = adc_counter_running_st;
+            }
+            break;
+        case computer_turn_st:
+            if(minimax_isGameOver(currentScore)) {
+                currentState = end_game_st;
+            } else {
+                currentState = player_turn_waiting_st;
+            }
+            break;
+        case evaluate_player_move_st:
+            if(minimax_isGameOver(currentScore)) {
+                currentState = end_game_st;
+            } else if(isPlayerMoveValid()) {
+                playNextMove();
+                currentState = computer_turn_st;
+            } else {
+                currentState = player_turn_waiting_st;
+            }
+            break;
+        case end_game_st:
+            break;
+    }
+    debugStatePrint();
+}
+
+static void playNextMove() {
+    if(isPlayerTurn) {
+        if(isPlayerX) {
+            gameBoard.squares[playerNextMove.row][playerNextMove.column] = MINIMAX_PLAYER_SQUARE;
+            ticTacToeDisplay_drawX(playerNextMove.row, playerNextMove.column, false);
+        } else {
+            gameBoard.squares[playerNextMove.row][playerNextMove.column] = MINIMAX_OPPONENT_SQUARE;
+            ticTacToeDisplay_drawO(playerNextMove.row, playerNextMove.column, false);
+        }
+    } else {
+        if(!isPlayerX) {
+            gameBoard.squares[computerNextMove.row][computerNextMove.column] = MINIMAX_PLAYER_SQUARE;
+            ticTacToeDisplay_drawX(computerNextMove.row, computerNextMove.column, false);
+        } else {
+            gameBoard.squares[computerNextMove.row][computerNextMove.column] = MINIMAX_OPPONENT_SQUARE;
+            ticTacToeDisplay_drawO(computerNextMove.row, computerNextMove.column, false);
+        }
+    }
+    minimaxTest_printBoard(&gameBoard);
+}
+
+
+static bool isPlayerMoveValid() {
+    return !gameBoard.squares[playerNextMove.row][playerNextMove.column];
+}
+
+static bool resetGame() {
+    return buttons_read() & BUTTONS_BTN0_MASK;
+}
+
+
+// This is a debug state print routine. It will print the names of the states each
+// time tick() is called. It only prints states if they are different than the
+// previous state.
+static void debugStatePrint() {
+  static gameControl_st_t previousState;
+  static bool firstPass = true;
+  // Only print the message if:
+  // 1. This the first pass and the value for previousState is unknown.
+  // 2. previousState != currentState - this prevents reprinting the same state name over and over.
+  if (previousState != currentState || firstPass) {
+    firstPass = false;                // previousState will be defined, firstPass is false.
+    previousState = currentState;     // keep track of the last state that you were in.
+    switch(currentState) {            // This prints messages based upon the state that you were in.
+      case init_st:
+        printf("init_st\n\r");
+        break;
+      case splash_screen_st:
+        printf("splash_screen_st\n\r");
+        break;
+      case waiting_first_move_st:
+        printf("waiting_first_move_st\n\r");
+        break;
+      case adc_counter_running_st:
+        printf("adc_counter_running_st\n\r");
+        break;
+      case player_turn_waiting_st:
+        printf("player_turn_waiting_st\n\r");
+        break;
+      case computer_turn_st:
+        printf("computer_turn_st\n\r");
+        break;
+      case evaluate_player_move_st:
+        printf("eval_player_move_st\n\r");
+        break;
+      case end_game_st:
+        printf("end_game_st\n\r");
+        break;
+     }
+  }
+}
+
+

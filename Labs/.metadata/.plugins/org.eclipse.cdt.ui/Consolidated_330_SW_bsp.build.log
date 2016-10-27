@@ -1,4 +1,4 @@
-17:28:42 **** Build of project Consolidated_330_SW_bsp ****
+13:15:10 **** Build of project Consolidated_330_SW_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/axi_dispctrl_v1_00_a/src"
 make -C ps7_cortexa9_0/libsrc/axi_dispctrl_v1_00_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -154,5 +154,5 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling xadcps"
 'Finished building libraries'
 
-17:29:20 Build Finished (took 38s.509ms)
+13:15:45 Build Finished (took 34s.885ms)
 

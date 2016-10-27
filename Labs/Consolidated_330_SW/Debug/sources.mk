@@ -25,6 +25,7 @@ S_UPPER_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 supportFiles \
+src/ticTacToe \
 src/switchesAndButtons \
 src/intervalTimer \
 src/clock \

@@ -1,0 +1,23 @@
+/*
+ * ticTacToeControlMain.c
+ *
+ *  Created on: Oct 22, 2016
+ *      Author: cdmoo
+ */
+
+#include "minimax.h"
+#include "supportFiles/utils.h"
+#include "ticTacToeControl.h"
+#include <stdio.h>
+
+int main() {
+    printf("hello \n");
+    return 0;
+}
+
+void isr_function() {
+    // Empty for now.
+}
+
+
+

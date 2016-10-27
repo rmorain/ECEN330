@@ -1,0 +1,65 @@
+/*
+ * ticTacToeDisplay.c
+ *
+ *  Created on: Oct 19, 2016
+ *      Author: cdmoo
+ */
+#include "ticTacToeDisplay.h"
+#include "supportFiles/display.h"
+
+#define BOARD_LINE_X1 DISPLAY_WIDTH / 3
+#define BOARD_LINE_X2 2 * DISPLAY_WIDTH / 3
+#define BOARD_LINE_Y1 DISPLAY_HEIGHT / 3
+#define BOARD_LINE_Y2 2 * DISPLAY_HEIGHT / 3
+
+#define SQUARE_WIDTH DISPLAY_WIDTH / 3
+#define SQUARE_HEIGHT DISPLAY_HEIGHT / 3
+#define MID_SQUARE_OFFSET_X DISPLAY_WIDTH / 6
+#define MID_SQUARE_OFFSET_Y DISPLAY_HEIGHT / 6
+#define NEAR_SQUARE_OFFSET_X 20
+#define NEAR_SQUARE_OFFSET_Y 10
+#define FAR_SQUARE_OFFSET_X 80
+#define FAR_SQUARE_OFFSET_Y 70
+#define CIRCLE_RADIUS 40
+
+void ticTacToeDisplay_init() {
+    display_init();  // Must init all of the software and underlying hardware for LCD.
+    display_fillScreen(DISPLAY_BLACK);  // Blank the screen.
+    ticTacToeDisplay_drawBoardLines();
+}
+
+void ticTacToeDisplay_drawX(uint8_t row, uint8_t column, bool erase) {
+    uint16_t baseX = column * SQUARE_WIDTH;
+    uint16_t baseY = row * SQUARE_HEIGHT;
+
+    uint16_t color = erase ? DISPLAY_BLACK : DISPLAY_YELLOW;
+
+    display_drawLine(baseX + NEAR_SQUARE_OFFSET_X, baseY + NEAR_SQUARE_OFFSET_Y,
+            baseX + FAR_SQUARE_OFFSET_X, baseY + FAR_SQUARE_OFFSET_Y, color);
+    display_drawLine(baseX + FAR_SQUARE_OFFSET_X, baseY + NEAR_SQUARE_OFFSET_Y,
+            baseX + NEAR_SQUARE_OFFSET_X, baseY + FAR_SQUARE_OFFSET_Y, color);
+}
+
+void ticTacToeDisplay_drawO(uint8_t row, uint8_t column, bool erase) {
+    uint16_t circleX = column * SQUARE_WIDTH + MID_SQUARE_OFFSET_X;
+    uint16_t circleY = row * SQUARE_HEIGHT + MID_SQUARE_OFFSET_Y;
+    uint16_t color = erase ? DISPLAY_BLACK : DISPLAY_YELLOW;
+
+    display_drawCircle(circleX, circleY, CIRCLE_RADIUS, color);
+}
+
+void ticTacToeDisplay_touchScreenComputeBoardRowColumn(uint8_t* row, uint8_t* column) {
+
+}
+
+void ticTacToeDisplay_runTest() {
+    ticTacToeDisplay_draw0(1,2,false);
+}
+
+void ticTacToeDisplay_drawBoardLines() {
+    display_drawLine(BOARD_LINE_X1, 0, BOARD_LINE_X1, DISPLAY_HEIGHT, DISPLAY_YELLOW);
+    display_drawLine(BOARD_LINE_X2, 0, BOARD_LINE_X2, DISPLAY_HEIGHT, DISPLAY_YELLOW);
+    display_drawLine(0, BOARD_LINE_Y1, DISPLAY_WIDTH, BOARD_LINE_Y1, DISPLAY_YELLOW);
+    display_drawLine(0, BOARD_LINE_Y2, DISPLAY_WIDTH, BOARD_LINE_Y2, DISPLAY_YELLOW);
+}
+
