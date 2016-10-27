@@ -7,7 +7,6 @@
 
 
 #include "minimax.h"
-#include "minimaxTest.h"
 #include <limits.h>
 #include <stdio.h>
 
@@ -297,13 +296,4 @@ bool isBoardEmpty(minimax_board_t* board) {
     }
     // return true if no empty squares were detected
     return true;
-}
-
-// NOTE I have a massive test module in minimaxTest.h.  My tests were gettings so big
-// that it didn't make sense to contain them and the test boards in the minimax module
-// the TA that passed me off said not to include the test module, however the minimax_runTest()
-// method runs those test suites
-void minimax_runTest() {
-    minimaxTest_runComputeScoreTestSuite();
-    minimaxTest_runComputeNextMoveTestSuite();
 }

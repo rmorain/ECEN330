@@ -1,10 +1,10 @@
-20:39:36 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+21:02:08 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
 make all 
 'Building file: ../src/ticTacToe/ticTacToeControl.c'
 'Invoking: ARM g++ compiler'
 arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
-../src/ticTacToe/ticTacToeControl.c:250:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
- static void debugStatePrint() {
+../src/ticTacToe/ticTacToeControl.c:58:13: warning: 'void debugStatePrint()' declared 'static' but never defined [-Wunused-function]
+ static void debugStatePrint();
              ^
 'Finished building: ../src/ticTacToe/ticTacToeControl.c'
 ' '
@@ -14,5 +14,5 @@ arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp
 'Finished building target: Consolidated_330_SW.elf'
 ' '
 
-20:39:37 Build Finished (took 1s.234ms)
+21:02:09 Build Finished (took 1s.319ms)
 

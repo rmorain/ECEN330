@@ -27473,3 +27473,242 @@ arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_3
 arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 'Finished building target: Consolidated_330_SW.elf'
 ' '
+20:53:49 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/minimax.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/minimax.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/minimax.d" -MT"src/ticTacToe/minimax.d" -o "src/ticTacToe/minimax.o" "../src/ticTacToe/minimax.c"
+../src/ticTacToe/minimax.c: In function 'minimax_score_t minimax_rec(minimax_board_t*, bool, uint16_t)':
+../src/ticTacToe/minimax.c:65:14: warning: unused variable 'boardNum' [-Wunused-variable]
+     uint16_t boardNum = boardCount;
+              ^
+../src/ticTacToe/minimax.c:120:29: warning: 'highestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     choice = moveTable[index];
+                             ^
+../src/ticTacToe/minimax.c:258:14: warning: 'lowestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16_t lowestIndex, highestIndex; // keep track of lowest and highest score / move pairs
+              ^
+../src/ticTacToe/minimax.c: In function 'uint16_t findChoiceIndex(minimax_score_t*, bool)':
+../src/ticTacToe/minimax.c:281:36: warning: 'highestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return player ? highestIndex : lowestIndex;
+                                    ^
+../src/ticTacToe/minimax.c:258:14: warning: 'lowestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16_t lowestIndex, highestIndex; // keep track of lowest and highest score / move pairs
+              ^
+'Finished building: ../src/ticTacToe/minimax.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+20:54:02 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/minimax.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/minimax.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/minimax.d" -MT"src/ticTacToe/minimax.d" -o "src/ticTacToe/minimax.o" "../src/ticTacToe/minimax.c"
+../src/ticTacToe/minimax.c: In function 'minimax_score_t minimax_rec(minimax_board_t*, bool, uint16_t)':
+../src/ticTacToe/minimax.c:65:14: warning: unused variable 'boardNum' [-Wunused-variable]
+     uint16_t boardNum = boardCount;
+              ^
+../src/ticTacToe/minimax.c:120:29: warning: 'highestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     choice = moveTable[index];
+                             ^
+../src/ticTacToe/minimax.c:258:14: warning: 'lowestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16_t lowestIndex, highestIndex; // keep track of lowest and highest score / move pairs
+              ^
+../src/ticTacToe/minimax.c: In function 'uint16_t findChoiceIndex(minimax_score_t*, bool)':
+../src/ticTacToe/minimax.c:281:36: warning: 'highestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return player ? highestIndex : lowestIndex;
+                                    ^
+../src/ticTacToe/minimax.c:258:14: warning: 'lowestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16_t lowestIndex, highestIndex; // keep track of lowest and highest score / move pairs
+              ^
+'Finished building: ../src/ticTacToe/minimax.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+20:56:56 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/minimax.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/minimax.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/minimax.d" -MT"src/ticTacToe/minimax.d" -o "src/ticTacToe/minimax.o" "../src/ticTacToe/minimax.c"
+../src/ticTacToe/minimax.c: In function 'minimax_score_t minimax_rec(minimax_board_t*, bool, uint16_t)':
+../src/ticTacToe/minimax.c:65:14: warning: unused variable 'boardNum' [-Wunused-variable]
+     uint16_t boardNum = boardCount;
+              ^
+../src/ticTacToe/minimax.c:120:29: warning: 'highestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     choice = moveTable[index];
+                             ^
+../src/ticTacToe/minimax.c:258:14: warning: 'lowestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16_t lowestIndex, highestIndex; // keep track of lowest and highest score / move pairs
+              ^
+../src/ticTacToe/minimax.c: In function 'uint16_t findChoiceIndex(minimax_score_t*, bool)':
+../src/ticTacToe/minimax.c:281:36: warning: 'highestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return player ? highestIndex : lowestIndex;
+                                    ^
+../src/ticTacToe/minimax.c:258:14: warning: 'lowestIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16_t lowestIndex, highestIndex; // keep track of lowest and highest score / move pairs
+              ^
+'Finished building: ../src/ticTacToe/minimax.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+20:58:06 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:17:22: fatal error: ../utils.h: No such file or directory
+ #include "../utils.h"
+                      ^
+compilation terminated.
+make: *** [src/ticTacToe/ticTacToeControl.o] Error 1
+20:58:16 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:17:35: fatal error: ../supportFiles/utils.h: No such file or directory
+ #include "../supportFiles/utils.h"
+                                   ^
+compilation terminated.
+make: *** [src/ticTacToe/ticTacToeControl.o] Error 1
+20:59:03 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:257:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+'Finished building: ../src/ticTacToe/ticTacToeControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+20:59:35 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c: In function 'void ticTacToeControl_runTest()':
+../src/ticTacToe/ticTacToeControl.c:249:30: error: 'ticTacToeControl_tic' was not declared in this scope
+         ticTacToeControl_tic();
+                              ^
+../src/ticTacToe/ticTacToeControl.c: At global scope:
+../src/ticTacToe/ticTacToeControl.c:257:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+make: *** [src/ticTacToe/ticTacToeControl.o] Error 1
+20:59:41 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:257:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+'Finished building: ../src/ticTacToe/ticTacToeControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+20:59:58 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c: In function 'void ticTacToeControl_runTest()':
+../src/ticTacToe/ticTacToeControl.c:250:23: error: 'TEST_TICK_PERIOD' was not declared in this scope
+         utils_msDelay(TEST_TICK_PERIOD);
+                       ^
+../src/ticTacToe/ticTacToeControl.c: At global scope:
+../src/ticTacToe/ticTacToeControl.c:258:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+make: *** [src/ticTacToe/ticTacToeControl.o] Error 1
+21:00:17 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c: In function 'void ticTacToeControl_runTest()':
+../src/ticTacToe/ticTacToeControl.c:251:23: error: 'TEST_TICK_PERIOD' was not declared in this scope
+         utils_msDelay(TEST_TICK_PERIOD);
+                       ^
+../src/ticTacToe/ticTacToeControl.c: At global scope:
+../src/ticTacToe/ticTacToeControl.c:259:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+make: *** [src/ticTacToe/ticTacToeControl.o] Error 1
+21:00:35 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:259:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+'Finished building: ../src/ticTacToe/ticTacToeControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+21:01:41 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:261:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+'Finished building: ../src/ticTacToe/ticTacToeControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+21:01:49 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:261:13: warning: 'void debugStatePrint()' defined but not used [-Wunused-function]
+ static void debugStatePrint() {
+             ^
+'Finished building: ../src/ticTacToe/ticTacToeControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
+21:02:08 **** Auto Build of configuration Debug for project Consolidated_330_SW ****
+make all 
+'Building file: ../src/ticTacToe/ticTacToeControl.c'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O3 -g3 -I"C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\Labs\Consolidated_330_SW" -c -fmessage-length=0 -MT"src/ticTacToe/ticTacToeControl.o" -I../../Consolidated_330_SW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ticTacToe/ticTacToeControl.d" -MT"src/ticTacToe/ticTacToeControl.d" -o "src/ticTacToe/ticTacToeControl.o" "../src/ticTacToe/ticTacToeControl.c"
+../src/ticTacToe/ticTacToeControl.c:58:13: warning: 'void debugStatePrint()' declared 'static' but never defined [-Wunused-function]
+ static void debugStatePrint();
+             ^
+'Finished building: ../src/ticTacToe/ticTacToeControl.c'
+' '
+'Building target: Consolidated_330_SW.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Consolidated_330_SW_bsp/ps7_cortexa9_0/lib -o "Consolidated_330_SW.elf"  ./supportFiles/Adafruit_GFX.o ./supportFiles/Adafruit_STMPE610.o ./supportFiles/Adafruit_TFTLCD.o ./supportFiles/Print.o ./supportFiles/WString.o ./supportFiles/bluetooth.o ./supportFiles/circularBuffer.o ./supportFiles/display.o ./supportFiles/glcdfont.o ./supportFiles/globalTimer.o ./supportFiles/interrupts.o ./supportFiles/lcd.o ./supportFiles/leds.o ./supportFiles/mio.o ./supportFiles/new.o ./supportFiles/spi.o ./supportFiles/tftGpio.o ./supportFiles/utils.o  ./src/ticTacToe/minimax.o ./src/ticTacToe/minimaxTest.o ./src/ticTacToe/ticTacToeControl.o ./src/ticTacToe/ticTacToeControlMain.o ./src/ticTacToe/ticTacToeDisplay.o  ./src/switchesAndButtons/buttons.o ./src/switchesAndButtons/switches.o  ./src/intervalTimer/intervalTimer.o  ./src/clock/clockControl.o ./src/clock/clockDisplay.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Consolidated_330_SW.elf'
+' '
