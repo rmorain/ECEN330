@@ -1,0 +1,32 @@
+/*
+ * simonMain.c
+ *
+ *  Created on: Oct 30, 2016
+ *      Author: cdmoo
+ */
+#include <stdio.h>
+#include "simonDisplay.h"
+#include "buttonHandler.h"
+#include "supportFiles/display.h"
+#include "flashSequence.h"
+#include "verifySequence.h"
+#include "simonControl.h"
+#include "supportFiles/utils.h"
+
+int main() {
+    while(1) {
+        simonControl_tick();
+        verifySequence_tick();
+        flashSequence_tick();
+        buttonHandler_tick();
+        utils_msDelay(50);
+    }
+    return 0;
+}
+
+void isr_function() {
+    // Empty for now.
+}
+
+
+

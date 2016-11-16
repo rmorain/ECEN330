@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="0" y="0">
+<window height="1038" maximized="true" width="976" x="-8" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -11,6 +11,7 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="241" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="183" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="141" y="22"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
@@ -22,7 +23,6 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -33,8 +33,8 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="2"/>
 <part id="1"/>
+<part id="2"/>
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
@@ -45,61 +45,66 @@
 <part id="10"/>
 <part id="11"/>
 <part id="12"/>
+<part id="13"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeControlMain.c" partName="ticTacToeControlMain.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/ticTacToeControlMain.c" title="ticTacToeControlMain.c" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeControlMain.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControlMain.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="103" selectionTopPixel="248"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="simonControl.c" partName="simonControl.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/simonControl.c" title="simonControl.c" tooltip="Consolidated_330_SW/src/mySimon/simonControl.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/simonControl.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12109" selectionTopPixel="4100"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeControl.c" partName="ticTacToeControl.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.c" title="ticTacToeControl.c" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeControl.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="637" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="simonDisplay.c" partName="simonDisplay.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/simonDisplay.c" title="simonDisplay.c" tooltip="Consolidated_330_SW/src/mySimon/simonDisplay.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/simonDisplay.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeControl.h" partName="ticTacToeControl.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.h" title="ticTacToeControl.h" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeControl.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="180" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="verifySequence.c" partName="verifySequence.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/verifySequence.c" title="verifySequence.c" tooltip="Consolidated_330_SW/src/mySimon/verifySequence.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/verifySequence.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="279" selectionTopPixel="2216"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="minimax.h" partName="minimax.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/minimax.h" title="minimax.h" tooltip="Consolidated_330_SW/src/ticTacToe/minimax.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/minimax.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="229" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="display.h" partName="display.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/supportFiles/display.h" title="display.h" tooltip="Consolidated_330_SW/supportFiles/display.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/supportFiles/display.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeDisplay.h" partName="ticTacToeDisplay.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.h" title="ticTacToeDisplay.h" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="24" selectionOffset="275" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeDisplay.c" partName="ticTacToeDisplay.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.c" title="ticTacToeDisplay.c" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3884" selectionTopPixel="152"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="utils.h" partName="utils.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/supportFiles/utils.h" title="utils.h" tooltip="Consolidated_330_SW/supportFiles/utils.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/supportFiles/utils.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="123" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clockControl.c" partName="clockControl.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockControl.c" title="clockControl.c" tooltip="Consolidated_330_SW/src/clock/clockControl.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockControl.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="59" selectionOffset="6028" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="minimax.c" partName="minimax.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/minimax.c" title="minimax.c" tooltip="Consolidated_330_SW/src/ticTacToe/minimax.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/minimax.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3243" selectionTopPixel="1000"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="minimaxTest.h" partName="minimaxTest.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/ticTacToe/minimaxTest.h" title="minimaxTest.h" tooltip="Consolidated_330_SW/src/ticTacToe/minimaxTest.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/ticTacToe/minimaxTest.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="691" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="simonMain.c" partName="simonMain.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/simonMain.c" title="simonMain.c" tooltip="Consolidated_330_SW/src/mySimon/simonMain.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/simonMain.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2092" selectionTopPixel="820"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="clockMain.c" partName="clockMain.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockMain.c" title="clockMain.c" tooltip="Consolidated_330_SW/src/clock/clockMain.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockMain.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="287" selectionOffset="402" selectionTopPixel="334"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="551" selectionTopPixel="749"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.c" partName="intervalTimer.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/intervalTimer/intervalTimer.c" title="intervalTimer.c" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="310"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="flashSequence.c" partName="flashSequence.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/flashSequence.c" title="flashSequence.c" tooltip="Consolidated_330_SW/src/mySimon/flashSequence.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/flashSequence.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4882" selectionTopPixel="1623"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.h" partName="intervalTimer.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/intervalTimer/intervalTimer.h" title="intervalTimer.h" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="2395" selectionTopPixel="522"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="buttonHandler.c" partName="buttonHandler.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/buttonHandler.c" title="buttonHandler.c" tooltip="Consolidated_330_SW/src/mySimon/buttonHandler.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/buttonHandler.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="2287" selectionTopPixel="878"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="globals.c" partName="globals.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/globals.c" title="globals.c" tooltip="Consolidated_330_SW/src/mySimon/globals.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/globals.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1793" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="globals.h" partName="globals.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/globals.h" title="globals.h" tooltip="Consolidated_330_SW/src/mySimon/globals.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/globals.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="180" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="simonDisplay.h" partName="simonDisplay.h" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/simonDisplay.h" title="simonDisplay.h" tooltip="Consolidated_330_SW/src/mySimon/simonDisplay.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/simonDisplay.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="480" selectionTopPixel="441"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.c" partName="buttons.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/switchesAndButtons/buttons.c" title="buttons.c" tooltip="Consolidated_330_SW/src/switchesAndButtons/buttons.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="452"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clockControl.c" partName="clockControl.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/clock/clockControl.c" title="clockControl.c" tooltip="Consolidated_330_SW/src/clock/clockControl.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/clock/clockControl.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="buttonHandler_runTest.c" partName="buttonHandler_runTest.c" path="C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/Consolidated_330_SW/src/mySimon/buttonHandler_runTest.c" title="buttonHandler_runTest.c" tooltip="Consolidated_330_SW/src/mySimon/buttonHandler_runTest.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consolidated_330_SW/src/mySimon/buttonHandler_runTest.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -120,7 +125,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -212,15 +217,17 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@740b0dbb" ratio="0.749499" ratioLeft="748" ratioRight="250" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.20346563" ratioLeft="364" ratioRight="1425" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.71854305" ratioLeft="651" ratioRight="255" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.15767418" ratioLeft="301" ratioRight="1608" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.6699779" ratioLeft="607" ratioRight="299" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -236,7 +243,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b2d86b2" ratio="0.706411" ratioLeft="1179" ratioRight="490" relationship="2" relative="bottom">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b2d86b2" ratio="0.49933246" ratioLeft="374" ratioRight="375" relationship="2" relative="bottom">
 <folder activePageID="com.xilinx.sdk.logger.SdkLogView" appearance="2" expanded="2">
 <page content="com.xilinx.sdk.logger.SdkLogView" label="SDK Log"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -269,165 +276,172 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControlMain.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/ticTacToe/minimax.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/ticTacToe/minimaxTest.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/simonControl.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/simonMain.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/simonDisplay.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/flashSequence.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/buttonHandler.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/globals.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/globals.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/simonDisplay.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/clock/clockControl.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/buttonHandler_runTest.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/flashSequence.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/buttonHandler.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/globals.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/simonControl.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consolidated_330_SW/src/mySimon/buttonHandler.c"/>
 </editors>
-<item historyLabel="minimax.c" index="1">
-<position info="not_deleted" x="2943" y="0"/>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2480" y="0"/>
 </item>
-<item historyLabel="minimax.c" index="1">
-<position info="not_deleted" x="3033" y="0"/>
+<item historyLabel="globals.c" index="5">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="minimaxTest.h" index="3">
-<position info="not_deleted" x="691" y="22"/>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="280" y="0"/>
 </item>
-<item historyLabel="minimax.c" index="1">
-<position info="not_deleted" x="2979" y="0"/>
+<item historyLabel="globals.c" index="5">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="clockControl.c" index="4">
-<position info="not_deleted" x="6028" y="59"/>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="280" y="0"/>
 </item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2480" y="0"/>
+</item>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2463" y="0"/>
+</item>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="buttonHandler.c" index="4">
+<position info="not_deleted" x="5557" y="0"/>
+</item>
+<item historyLabel="simonDisplay.c" index="2">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="simonDisplay.h" index="7">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="globals.c" index="5">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="simonDisplay.h" index="7">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="buttonHandler.c" index="4">
+<position info="not_deleted" x="2306" y="0"/>
+</item>
+<item historyLabel="buttons.c" index="8">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="clockControl.c" index="9">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="buttons.c" index="8">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="simonDisplay.h" index="7">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="buttonHandler_runTest.c" index="10">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="clockControl.c" index="9">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="buttonHandler.c" index="4">
+<position info="not_deleted" x="7674" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="simonDisplay.c" index="2">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="simonControl.c" index="0">
+<position info="not_deleted" x="335" y="0"/>
+</item>
+<item historyLabel="flashSequence.c" index="3">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="simonControl.c" index="0">
+<position info="not_deleted" x="8062" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="simonDisplay.c" index="2">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="simonControl.c" index="0">
+<position info="not_deleted" x="8847" y="0"/>
+</item>
+<item historyLabel="flashSequence.c" index="3">
+<position info="not_deleted" x="1333" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="simonDisplay.c" index="2">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="globals.h" index="6">
+<position info="not_deleted" x="180" y="0"/>
+</item>
+<item historyLabel="simonMain.c" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="flashSequence.c" index="11">
+<position info="not_deleted" x="2255" y="0"/>
+</item>
+<item historyLabel="buttonHandler.c" index="12">
 <position/>
 </item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
+<item historyLabel="globals.c" index="13">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position/>
+<item historyLabel="buttonHandler.c" index="12">
+<position info="not_deleted" x="6731" y="0"/>
 </item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
+<item historyLabel="globals.c" index="13">
+<position info="not_deleted" x="1793" y="0"/>
 </item>
-<item historyLabel="ticTacToeDisplay.c" index="5">
-<position info="not_deleted" x="5100" y="0"/>
+<item historyLabel="buttonHandler.c" index="12">
+<position info="not_deleted" x="6731" y="0"/>
 </item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="2828" y="0"/>
+<item historyLabel="flashSequence.c" index="11">
+<position info="not_deleted" x="4882" y="0"/>
 </item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position/>
+<item historyLabel="globals.c" index="13">
+<position info="not_deleted" x="1793" y="0"/>
 </item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="518" y="15"/>
+<item historyLabel="simonControl.c" index="14">
+<position info="not_deleted" x="8903" y="0"/>
 </item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="2828" y="0"/>
+<item historyLabel="buttonHandler.c" index="15">
+<position info="not_deleted" x="2287" y="19"/>
 </item>
-<item historyLabel="ticTacToeDisplay.c" index="5">
-<position info="not_deleted" x="5100" y="0"/>
-</item>
-<item historyLabel="ticTacToeDisplay.c" index="5">
-<position info="not_deleted" x="3884" y="0"/>
-</item>
-<item historyLabel="intervalTimer.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="intervalTimer.h" index="7">
-<position info="not_deleted" x="3" y="0"/>
-</item>
-<item historyLabel="intervalTimer.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="2828" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="2910" y="0"/>
-</item>
-<item historyLabel="intervalTimer.h" index="7">
-<position info="not_deleted" x="3" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position/>
-</item>
-<item historyLabel="intervalTimer.h" index="7">
-<position info="not_deleted" x="2395" y="25"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="8394" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="8394" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="5283" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="ticTacToeDisplay.c" index="5">
-<position info="not_deleted" x="3884" y="0"/>
-</item>
-<item historyLabel="ticTacToeDisplay.h" index="8">
-<position info="not_deleted" x="275" y="24"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="2045" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="2828" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="949" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="949" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="596" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="103" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="382" y="0"/>
-</item>
-<item historyLabel="minimax.c" index="1">
-<position info="not_deleted" x="3243" y="0"/>
-</item>
-<item historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="103" y="0"/>
-</item>
-<item historyLabel="ticTacToeControl.c" index="2">
-<position info="not_deleted" x="637" y="0"/>
-</item>
-<item active="true" historyLabel="ticTacToeControlMain.c" index="0">
-<position info="not_deleted" x="103" y="0"/>
+<item active="true" historyLabel="simonControl.c" index="14">
+<position info="not_deleted" x="4798" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -446,50 +460,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.h" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.h">
-<persistable path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="intervalTimer.c" tooltip="Consolidated_330_SW/src/intervalTimer/intervalTimer.c">
-<persistable path="/Consolidated_330_SW/src/intervalTimer/intervalTimer.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockMain.c" tooltip="Consolidated_330_SW/src/clock/clockMain.c">
-<persistable path="/Consolidated_330_SW/src/clock/clockMain.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="minimaxTest.h" tooltip="Consolidated_330_SW/src/ticTacToe/minimaxTest.h">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/minimaxTest.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="minimax.c" tooltip="Consolidated_330_SW/src/ticTacToe/minimax.c">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/minimax.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttonHandler_runTest.c" tooltip="Consolidated_330_SW/src/mySimon/buttonHandler_runTest.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/buttonHandler_runTest.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockControl.c" tooltip="Consolidated_330_SW/src/clock/clockControl.c">
 <persistable path="/Consolidated_330_SW/src/clock/clockControl.c"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.c" tooltip="Consolidated_330_SW/src/switchesAndButtons/buttons.c">
+<persistable path="/Consolidated_330_SW/src/switchesAndButtons/buttons.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="simonDisplay.h" tooltip="Consolidated_330_SW/src/mySimon/simonDisplay.h">
+<persistable path="/Consolidated_330_SW/src/mySimon/simonDisplay.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="globals.h" tooltip="Consolidated_330_SW/src/mySimon/globals.h">
+<persistable path="/Consolidated_330_SW/src/mySimon/globals.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="globals.c" tooltip="Consolidated_330_SW/src/mySimon/globals.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/globals.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttonHandler.c" tooltip="Consolidated_330_SW/src/mySimon/buttonHandler.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/buttonHandler.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="flashSequence.c" tooltip="Consolidated_330_SW/src/mySimon/flashSequence.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/flashSequence.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clockMain.c" tooltip="Consolidated_330_SW/src/clock/clockMain.c">
+<persistable path="/Consolidated_330_SW/src/clock/clockMain.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="simonMain.c" tooltip="Consolidated_330_SW/src/mySimon/simonMain.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/simonMain.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="display.h" tooltip="Consolidated_330_SW/supportFiles/display.h">
 <persistable path="/Consolidated_330_SW/supportFiles/display.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Consolidated_330_SW/src/helloWorld/main.c">
-<persistable path="/Consolidated_330_SW/src/helloWorld/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="verifySequence.c" tooltip="Consolidated_330_SW/src/mySimon/verifySequence.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/verifySequence.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="utils.h" tooltip="Consolidated_330_SW/supportFiles/utils.h">
-<persistable path="/Consolidated_330_SW/supportFiles/utils.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="simonDisplay.c" tooltip="Consolidated_330_SW/src/mySimon/simonDisplay.c">
+<persistable path="/Consolidated_330_SW/src/mySimon/simonDisplay.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeDisplay.c" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.c">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttonHandler.h" tooltip="Consolidated_330_SW/src/mySimon/buttonHandler.h">
+<persistable path="/Consolidated_330_SW/src/mySimon/buttonHandler.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeDisplay.h" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.h">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/ticTacToeDisplay.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="minimaxMain.c" tooltip="Consolidated_330_SW/src/ticTacToe/minimaxMain.c">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/minimaxMain.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="minimax.h" tooltip="Consolidated_330_SW/src/ticTacToe/minimax.h">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/minimax.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeControl.h" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeControl.h">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ticTacToeControl.c" tooltip="Consolidated_330_SW/src/ticTacToe/ticTacToeControl.c">
-<persistable path="/Consolidated_330_SW/src/ticTacToe/ticTacToeControl.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="flashSequence.h" tooltip="Consolidated_330_SW/src/mySimon/flashSequence.h">
+<persistable path="/Consolidated_330_SW/src/mySimon/flashSequence.h"/>
 </file>
 </mruList>
 </workbench>

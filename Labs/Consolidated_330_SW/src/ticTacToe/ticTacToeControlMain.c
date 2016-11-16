@@ -19,7 +19,6 @@
 #include "ticTacToeControl.h"
 #include "ticTacToeDisplay.h"
 #include "../intervalTimer/intervalTimer.h"
-#include "supportFiles/display.h"
 
 #define TOTAL_SECONDS 60
 // The formula for computing the load value is based upon the formula from 4.1.1 (calculating timer intervals)

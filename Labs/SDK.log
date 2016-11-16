@@ -982,3 +982,304 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 18:12:16 INFO  : ps7_post_config is completed.
 18:12:17 INFO  : Processor reset is completed for ps7_cortexa9_0
 18:18:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:45:02 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:46:56 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+15:53:30 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+15:53:31 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+15:53:31 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:53:31 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:53:31 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:53:31 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:53:31 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:53:31 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+20:21:34 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+20:22:00 INFO  : ps7_init is completed.
+20:22:00 INFO  : ps7_post_config is completed.
+20:22:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:25:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:27:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:29:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:30:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:31:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:32:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:48:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:59:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:00:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:03:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:04:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:05:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:15:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:18:08 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:30:19 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+11:45:06 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+11:45:07 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+11:45:25 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+11:45:39 INFO  : ps7_init is completed.
+11:45:40 INFO  : ps7_post_config is completed.
+11:45:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:57:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:38:53 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+13:39:37 INFO  : ps7_init is completed.
+13:39:37 INFO  : ps7_post_config is completed.
+13:39:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:41:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:41:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:24:57 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+14:25:21 INFO  : ps7_init is completed.
+14:25:21 INFO  : ps7_post_config is completed.
+14:25:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:27:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:46:27 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:23:30 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+13:28:21 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+13:28:22 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+13:28:31 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+13:29:38 INFO  : ps7_init is completed.
+13:29:38 INFO  : ps7_post_config is completed.
+13:29:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:32:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:32:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:34:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:35:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:37:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:40:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:40:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:42:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:44:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:40:23 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+16:52:07 INFO  : ps7_init is completed.
+16:52:07 INFO  : ps7_post_config is completed.
+16:52:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:55:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:57:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:59:43 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:45:00 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+15:45:10 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+15:45:11 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+15:45:22 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+15:46:13 INFO  : ps7_init is completed.
+15:46:13 INFO  : ps7_post_config is completed.
+15:46:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:48:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:48:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:48:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:48:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:48:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:48:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+15:51:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:13:23 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+16:13:55 INFO  : ps7_init is completed.
+16:13:55 INFO  : ps7_post_config is completed.
+16:13:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:22:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:38:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:41:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:44:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:46:28 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+18:46:53 INFO  : ps7_init is completed.
+18:46:53 INFO  : ps7_post_config is completed.
+18:46:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:50:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:57:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:59:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:01:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:03:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:04:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:04:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:13:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:15:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:15:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:16:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:19:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:20:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:22:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:27:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:34:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:48:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:49:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:50:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:50:00 ERROR : Port COM4 is already in use.
+19:50:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:14:21 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+20:17:22 INFO  : ps7_init is completed.
+20:17:23 INFO  : ps7_post_config is completed.
+20:17:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:24:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:25:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:37:19 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+20:37:29 INFO  : ps7_init is completed.
+20:37:30 INFO  : ps7_post_config is completed.
+20:37:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:39:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:40:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:40:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:42:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:51:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:51:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:53:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:27:07 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:33:13 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+16:33:40 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+16:33:41 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+16:34:04 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+17:02:37 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:04:10 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+11:07:04 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+11:07:04 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+11:07:15 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+11:10:32 INFO  : ps7_init is completed.
+11:10:32 INFO  : ps7_post_config is completed.
+11:10:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:33:04 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+12:34:01 INFO  : ps7_init is completed.
+12:34:01 INFO  : ps7_post_config is completed.
+12:34:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:36:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:42:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:44:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:44:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:46:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:48:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:49:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:57:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:59:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:45:32 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+13:45:51 INFO  : ps7_init is completed.
+13:45:51 INFO  : ps7_post_config is completed.
+13:45:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:46:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:31:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:22:31 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+21:53:02 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+21:53:03 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+21:53:16 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+21:53:52 INFO  : ps7_init is completed.
+21:53:52 INFO  : ps7_post_config is completed.
+21:53:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:55:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:00:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:05:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:12:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:13:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:13:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:14:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:14:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:14:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:14:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:15:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:15:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:16:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:17:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:22:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:29:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:32:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:35:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:35:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:40:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:45:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:03:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:05:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:13:20 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:13:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:18:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:20:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:21:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:21:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:21:30 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:21:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:22:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:22:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:24:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:33:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:33:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:35:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:36:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:40:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:41:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:41:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:44:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:44:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:44:40 ERROR : Port COM4 is already in use.
+23:45:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:45:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:45:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:46:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:46:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:47:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:47:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:48:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:48:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:53:49 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:17:41 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+19:24:10 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+19:24:10 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+19:24:24 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+19:25:22 INFO  : ps7_init is completed.
+19:25:22 INFO  : ps7_post_config is completed.
+19:25:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:26:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:33:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:37:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:38:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:41:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:51:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:52:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:54:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:55:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:00:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:01:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:09:10 INFO  : FPGA configured successfully with bitstream "C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/system_wrapper.bit"
+11:10:23 INFO  : ps7_init is completed.
+11:10:23 INFO  : ps7_post_config is completed.
+11:10:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:11:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:22:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:28:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:30:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:31:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:32:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:33:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:35:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:36:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:38:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:27:49 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:02:46 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+09:30:46 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+09:30:47 WARN  :  [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/Digilent/axi_dispctrl_1.0 do not exist or not accessible
+ [Hsm 55-1607] Software Repository Paths c:/Users/hutch/ZYBO/digilent_demoUARTBluetooth/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0 and C:/Users/cdmoo/Desktop/BYU_FALL_2016/ECEN_330/XilinxWorkspace/Labs/EE330_hw_platform_0/../../../../../../lib/ADI/axi_i2s_adi_1.0 do not exist or not accessible
+09:30:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+09:30:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+09:30:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+09:30:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+09:30:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+09:30:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name C:\Users\hutch\ZYBO\EE330_Fall2015_EE390_Winter2016\EE330_Fall2015_EE390_Winter2016_Final_SW\Consolidated_330_SW_bsp\system.mss
+08:10:28 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository
+11:17:48 INFO  : Restoring local repository preferences: 
+		 C:\Users\cdmoo\Desktop\BYU_FALL_2016\ECEN_330\XilinxWorkspace\ip_repository

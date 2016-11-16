@@ -1,6 +1,6 @@
-18:18:03 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+11:38:42 **** Incremental Build of configuration Debug for project zynq_fsbl ****
 make all 
 make: Nothing to be done for `all'.
 
-18:18:04 Build Finished (took 229ms)
+11:38:42 Build Finished (took 269ms)
 

@@ -7,21 +7,18 @@ C_SRCS += \
 ../src/ticTacToe/minimax.c \
 ../src/ticTacToe/minimaxTest.c \
 ../src/ticTacToe/ticTacToeControl.c \
-../src/ticTacToe/ticTacToeControlMain.c \
 ../src/ticTacToe/ticTacToeDisplay.c 
 
 OBJS += \
 ./src/ticTacToe/minimax.o \
 ./src/ticTacToe/minimaxTest.o \
 ./src/ticTacToe/ticTacToeControl.o \
-./src/ticTacToe/ticTacToeControlMain.o \
 ./src/ticTacToe/ticTacToeDisplay.o 
 
 C_DEPS += \
 ./src/ticTacToe/minimax.d \
 ./src/ticTacToe/minimaxTest.d \
 ./src/ticTacToe/ticTacToeControl.d \
-./src/ticTacToe/ticTacToeControlMain.d \
 ./src/ticTacToe/ticTacToeDisplay.d 
 
 

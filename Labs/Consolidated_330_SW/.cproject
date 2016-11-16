@@ -75,8 +75,11 @@
 						</toolChain>
 					</folderInfo>
 					<fileInfo id="xilinx.gnu.arm.exe.debug.1532977436.791371425" name="minimaxTest.h" rcbsApplicability="disable" resourcePath="src/ticTacToe/minimaxTest.h" toolsToInvoke=""/>
+					<fileInfo id="xilinx.gnu.arm.exe.debug.1532977436.1583403700" name="ticTacToeControlMain.c" rcbsApplicability="disable" resourcePath="src/ticTacToe/ticTacToeControlMain.c" toolsToInvoke="xilinx.gnu.arm.cxx.toolchain.compiler.debug.1372624262.416372978">
+						<tool id="xilinx.gnu.arm.cxx.toolchain.compiler.debug.1372624262.416372978" name="ARM g++ compiler" superClass="xilinx.gnu.arm.cxx.toolchain.compiler.debug.1372624262"/>
+					</fileInfo>
 					<sourceEntries>
-						<entry excluding="src/helloWorld/main.c|src/ticTacToe/ticTacToeDisplayMain.c|src/ticTacToe/minimaxMain.c|src/clock/clockMain.c|src/intervalTimer/intervalTimerMain.c|src/switchesAndButtons/switchesAndButtonsLabMain.c|src/simon|src/laserTag|src/bluetoothTest|src/spaceInvadersTest1|src/bluetoothTest/Adafruit_BluefruitLE_SPI.cpp|src/bluetoothTest/examples|src/isr_function.c|src/intervalTimerLab" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="src/ticTacToe/ticTacToeControlMain.c|src/helloWorld/main.c|src/ticTacToe/ticTacToeDisplayMain.c|src/ticTacToe/minimaxMain.c|src/clock/clockMain.c|src/intervalTimer/intervalTimerMain.c|src/switchesAndButtons/switchesAndButtonsLabMain.c|src/simon|src/laserTag|src/bluetoothTest|src/spaceInvadersTest1|src/bluetoothTest/Adafruit_BluefruitLE_SPI.cpp|src/bluetoothTest/examples|src/isr_function.c|src/intervalTimerLab" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

@@ -1,0 +1,26 @@
+/*
+ * simonMain.c
+ *
+ *  Created on: Oct 30, 2016
+ *      Author: cdmoo
+ */
+#include <stdio.h>
+#include "simonDisplay.h"
+#include "buttonHandler.h"
+#include "supportFiles/display.h"
+#include "flashSequence.h"
+#include "verifySequence.h"
+#include "simonControl.h"
+
+int main() {
+    verifySequence_runTest();
+    flashSequence_runTest();
+    return 0;
+}
+
+void isr_function() {
+    // Empty for now.
+}
+
+
+

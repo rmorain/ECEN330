@@ -27,6 +27,7 @@ SUBDIRS := \
 supportFiles \
 src/ticTacToe \
 src/switchesAndButtons \
+src/mySimon \
 src/intervalTimer \
 src/clock \
 

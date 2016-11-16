@@ -11,6 +11,7 @@ RM := rm -rf
 -include supportFiles/subdir.mk
 -include src/ticTacToe/subdir.mk
 -include src/switchesAndButtons/subdir.mk
+-include src/mySimon/subdir.mk
 -include src/intervalTimer/subdir.mk
 -include src/clock/subdir.mk
 -include subdir.mk
