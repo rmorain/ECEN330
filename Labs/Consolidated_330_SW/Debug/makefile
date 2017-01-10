@@ -15,6 +15,7 @@ RM := rm -rf
 -include src/mySimon/subdir.mk
 -include src/intervalTimer/subdir.mk
 -include src/clock/subdir.mk
+-include src/390Milestone1/subdir.mk
 -include subdir.mk
 -include objects.mk
 

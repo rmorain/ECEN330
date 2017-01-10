@@ -31,4 +31,5 @@ src/switchesAndButtons \
 src/mySimon \
 src/intervalTimer \
 src/clock \
+src/390Milestone1 \
 
