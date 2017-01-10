@@ -1,0 +1,148 @@
+/*
+ * wamControl.c
+ *
+ *  Created on: Nov 26, 2016
+ *      Author: cdmoo
+ */
+#include "stdint.h"
+#include "wamControl.h"
+#include "stdlib.h"
+#include "supportFiles/display.h"
+#include "wamDisplay.h"
+#include <stdio.h>
+
+// maximum time that the SM wills stay in adc counter running state waiting for the adc to settle
+#define ADC_COUNTER_MAX ( 50 / msPerTick )
+#define STARTING_MAX_ACTIVE_MOLE_COUNT 1
+#define RAND_MS_UPPER_BOUND 2001
+#define RAND_MS_LOWER_BOUND 500
+
+static uint16_t msPerTick; // global holding the ms per tick so that timing can be done in MS not ticks
+// the number of moles active at one time in one round, increases with each level
+static uint16_t maxActiveMoleCount;
+static uint32_t randomSeed; // random seed imported from the main so that the game is unpredictable
+static uint16_t maxMissCount; // maximum number of misses a player can incur before losing the game
+static uint16_t adcCounter; // counter keeping track of how long the SM has been in the adc state
+static int16_t lastTouchX, lastTouchY; // two globals that contained the last touched coordinates
+static uint8_t lastTouchZ; // global containing the last touched pressure
+
+typedef enum wam_state {
+    init_st, // dummy state that the SM starts out in, transitions immediately to wiating for touch state
+    waiting_for_touch_st, // the SM stays in this state waiting for user input
+    adc_counter_running_st, // SM stays in this state for 50 ms waiting for the adc to settle
+    end_st // enters this state when the player has lost
+} wam_state;
+
+// start off the game at the init state
+static wam_state currentState = init_st;
+
+// Call this before using any wamControl_ functions.
+void wamControl_init() {
+    // any time the module is reinitialized, set the SM to the init state
+    currentState = init_st;
+    maxActiveMoleCount = STARTING_MAX_ACTIVE_MOLE_COUNT; // and reset the maxActive mole count to 1
+}
+
+// Call this to set how much time is consumed by each tick of the controlling state machine.
+// This information makes it possible to set the awake and sleep time of moles in ms, not ticks.
+void wamControl_setMsPerTick(uint16_t msPerTickParam) {
+    msPerTick = msPerTickParam;
+}
+
+// This returns the time consumed by each tick of the controlling state machine.
+uint16_t wamControl_getMsPerTick() {
+    return msPerTick;
+}
+
+// Standard tick function.
+void wamControl_tick() {
+    // state actions
+    switch(currentState) {
+    case init_st: // no state actions for the init state
+        break;
+    case waiting_for_touch_st: // state actions for the waiting for touch state
+        wamDisplay_updateAllMoleTickCounts(); // each tick, update the mole counts
+        // if the number of random moles falls below the correct amount
+        if(wamDisplay_getActiveMoleCount() < maxActiveMoleCount) {
+            wamDisplay_activateRandomMole(); // tell the display to initialize a random mole
+        }
+        break;
+    case adc_counter_running_st:
+        wamDisplay_updateAllMoleTickCounts(); // each tick, update the mole counts
+        adcCounter++; // increase the adc counter
+        break;
+    case end_st: // no state actions for the end state
+        break;
+    }
+
+    // state transitions
+    switch(currentState) {
+    case init_st: // in the init state, immediately transition to the waiting for touch state
+        currentState = waiting_for_touch_st;
+        break;
+    case waiting_for_touch_st: // state transitions for the waiting for touch state
+        // stay in the waiting for touch state until either the user touches, attmempting to whack a mole
+        if(display_isTouched()) {
+            // when the display is touched, clear the old touch data
+            display_clearOldTouchData();
+            // and transition to the adc state
+            currentState = adc_counter_running_st;
+        // or the misses the maximum amount and loses
+        } else if(wamDisplay_getMissScore() >= maxMissCount) {
+            currentState = end_st; // transition to end state if the user loses
+        }
+        break;
+    case adc_counter_running_st: // state transitions for the adc counter running state
+        // stay in this state until the counter expires
+        if(adcCounter >= ADC_COUNTER_MAX) {
+            // once the counter expires, clear the counter
+            adcCounter = 0;
+            // get the touch point from the display module
+            display_getTouchedPoint(&lastTouchX, &lastTouchY, &lastTouchZ);
+            // store the touch point in a point struct
+            wamDisplay_point_t touch = { .x = lastTouchX, .y = lastTouchY };
+            wamDisplay_whackMole(&touch); // whack a mole with the touch struct
+            currentState = waiting_for_touch_st; // transition back to waiting state
+        }
+        break;
+    case end_st: // no transitions for the end state, stay here until module is reinitialized
+        break;
+    }
+}
+
+// Returns a random value that indicates how long the mole should sleep before awaking.
+wamDisplay_moleTickCount_t wamControl_getRandomMoleAsleepInterval() {
+    return (rand() % RAND_MS_UPPER_BOUND + RAND_MS_LOWER_BOUND) / msPerTick;
+}
+
+// Returns a random value that indicates how long the mole should stay awake before going dormant.
+wamDisplay_moleTickCount_t wamControl_getRandomMoleAwakeInterval() {
+    return (rand() % RAND_MS_UPPER_BOUND + RAND_MS_LOWER_BOUND) / msPerTick;
+}
+
+// Set the maximum number of active moles.
+void wamControl_setMaxActiveMoles(uint16_t count) {
+    maxActiveMoleCount = count;
+}
+
+// Get the current allowable count of active moles.
+uint16_t wamControl_getMaxActiveMoles() {
+    return maxActiveMoleCount;
+}
+
+// Set the seed for the random-number generator.
+void wamControl_setRandomSeed(uint32_t seed) {
+    randomSeed = seed; // store the seed locally
+    srand(randomSeed); // immediately call the srand function to seed the random sequence
+}
+
+// Set the maximum number of misses until the game is over.
+void wamControl_setMaxMissCount(uint16_t missCount) {
+    maxMissCount = missCount;
+}
+
+// Use this function to see if the game is finished.
+bool wamControl_isGameOver() {
+    // if the game is in the end state, that means that the game is over
+    return currentState == end_st;
+}

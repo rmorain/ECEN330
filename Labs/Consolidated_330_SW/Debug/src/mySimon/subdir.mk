@@ -12,7 +12,6 @@ C_SRCS += \
 ../src/mySimon/simonControl.c \
 ../src/mySimon/simonDisplay.c \
 ../src/mySimon/simonDisplay_runTest.c \
-../src/mySimon/simonMain.c \
 ../src/mySimon/verifySequence.c \
 ../src/mySimon/verifySequence_runTest.c 
 
@@ -25,7 +24,6 @@ OBJS += \
 ./src/mySimon/simonControl.o \
 ./src/mySimon/simonDisplay.o \
 ./src/mySimon/simonDisplay_runTest.o \
-./src/mySimon/simonMain.o \
 ./src/mySimon/verifySequence.o \
 ./src/mySimon/verifySequence_runTest.o 
 
@@ -38,7 +36,6 @@ C_DEPS += \
 ./src/mySimon/simonControl.d \
 ./src/mySimon/simonDisplay.d \
 ./src/mySimon/simonDisplay_runTest.d \
-./src/mySimon/simonMain.d \
 ./src/mySimon/verifySequence.d \
 ./src/mySimon/verifySequence_runTest.d 
 

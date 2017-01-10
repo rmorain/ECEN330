@@ -13,25 +13,26 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="1;" key="selection"/>
+		<item value="int " key="selection"/>
 		<list key="findhistory">
-			<item value="1;"/>
-			<item value="1)"/>
+			<item value="int "/>
+			<item value="int"/>
+			<item value=" 5"/>
+			<item value=" 4"/>
+			<item value=" 3"/>
+			<item value=" 2"/>
+			<item value=" 1"/>
 			<item value="1 "/>
-			<item value="1"/>
-			<item value="total"/>
-			<item value="update"/>
-			<item value="longestSequenceLength"/>
-			<item value="srand"/>
 		</list>
 		<list key="replacehistory">
+			<item value="uint16_t"/>
+			<item value="maxActiveMoleCount"/>
 			<item value="uint32_t"/>
 			<item value="uint32_t "/>
 			<item value="NUM_DISPLAY_CHARS"/>
 			<item value="msDelay"/>
 			<item value="displayedTime"/>
 			<item value="currentTime"/>
-			<item value="ARROW"/>
 		</list>
 	</section>
 </section>

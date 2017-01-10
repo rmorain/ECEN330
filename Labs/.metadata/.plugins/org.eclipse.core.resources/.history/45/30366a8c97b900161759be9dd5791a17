@@ -1,0 +1,487 @@
+/*
+ * wamDisplay.c
+ *
+ *  Created on: Nov 26, 2016
+ *      Author: cdmoo
+ */
+
+#include "supportFiles/display.h"
+#include "wamDisplay.h"
+#include "wamControl.h"
+#include "supportFiles/display.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "supportFiles/utils.h"
+
+#define MOLE_BACKGROUND_MARGIN_X 10
+#define MOLE_BACKGROUND_MARGIN_Y_TOP 10
+#define MOLE_BACKGROUND_MARGIN_Y_BOTTOM 40
+#define MOLE_BACKGROUND_WIDTH (DISPLAY_WIDTH - 2 * MOLE_BACKGROUND_MARGIN_X)
+#define MOLE_BACKGROUND_HEIGHT (DISPLAY_HEIGHT - MOLE_BACKGROUND_MARGIN_Y_BOTTOM - MOLE_BACKGROUND_MARGIN_Y_TOP)
+#define HOLE_RADIUS 25
+#define MAX_NUMBER_OF_MOLES 9
+#define MOLE_NUM_SIX 6
+#define MOLE_NUM_NINE 9
+#define MOLE_NUM_FOUR 4
+#define ERASE true
+#define NO_ERASE false
+
+#define MOLE_BACKGROUND_X0 MOLE_BACKGROUND_MARGIN_X
+#define MOLE_BACKGROUND_X1 (MOLE_BACKGROUND_MARGIN_X + MOLE_BACKGROUND_WIDTH / 3)
+#define MOLE_BACKGROUND_X2 (MOLE_BACKGROUND_MARGIN_X + 2 * MOLE_BACKGROUND_WIDTH / 3)
+#define MOLE_BACKGROUND_X3 (MOLE_BACKGROUND_MARGIN_X + MOLE_BACKGROUND_WIDTH)
+
+#define MOLE_BACKGROUND_Y0 MOLE_BACKGROUND_MARGIN_Y_TOP
+#define MOLE_BACKGROUND_Y1 (MOLE_BACKGROUND_MARGIN_Y_TOP + MOLE_BACKGROUND_HEIGHT / 3)
+#define MOLE_BACKGROUND_Y2 (MOLE_BACKGROUND_MARGIN_Y_TOP + 2 * MOLE_BACKGROUND_HEIGHT / 3)
+#define MOLE_BACKGROUND_Y3 (MOLE_BACKGROUND_MARGIN_Y_TOP + MOLE_BACKGROUND_HEIGHT)
+
+#define MOLE_INDEX_NOT_A_MOLE (-1)
+#define MOLE_INDEX_ZERO 0
+#define MOLE_INDEX_ONE 1
+#define MOLE_INDEX_TWO 2
+#define MOLE_INDEX_THREE 3
+#define MOLE_INDEX_FOUR 4
+#define MOLE_INDEX_FIVE 5
+#define MOLE_INDEX_SIX 6
+#define MOLE_INDEX_SEVEN 7
+#define MOLE_INDEX_EIGHT 8
+
+#define MAX_NUMBER_RAND_TRIES 50
+#define STARTING_HITS_PER_LEVEL 7
+
+// coordinate definitions
+#define X1 70
+#define X2 160
+#define X3 250
+#define Y1 50
+#define Y2 110
+#define Y3 170
+
+// splash screen cursor positions and text sizes
+#define SPLASH_CURSOR_X1 50
+#define SPLASH_CURSOR_Y1 70
+#define SPLASH_CURSOR_X2 40
+#define SPLASH_CURSOR_Y2 120
+#define TEXT_SIZE_LARGE 3
+#define TEXT_SIZE_MEDIUM 2
+#define TEXT_SIZE_SMALL 1
+
+// game over screen cursor positions
+#define GAME_OVER_CURSOR_X1 70
+#define GAME_OVER_CURSOR_Y1 50
+#define GAME_OVER_CURSOR_X2 110
+#define GAME_OVER_CURSOR_Y2 100
+#define GAME_OVER_CURSOR_X3 100
+#define GAME_OVER_CURSOR_Y3 130
+#define GAME_OVER_CURSOR_X4 70
+#define GAME_OVER_CURSOR_Y4 160
+#define GAME_OVER_CURSOR_X5 40
+#define GAME_OVER_CURSOR_Y5 220
+#define GAME_OVER_MESSAGE_SIZE 20
+
+// score screen cursor positions
+#define SCORE_CURSOR_Y 220
+#define SCORE_CURSOR_X1 10
+#define SCORE_CURSOR_X2 100
+#define SCORE_CURSOR_X3 200
+#define SCORE_MESSAGE_SIZE 10
+
+
+/********************** typedefs **********************/
+// This keeps track of all mole information.
+typedef struct {
+        wamDisplay_point_t origin;  // This is the origin of the hole for this mole.
+        // A mole is active if either of the tick counts are non-zero. The mole is dormant otherwise.
+        // During operation, non-zero tick counts are decremented at a regular rate by the control state machine.
+        // The mole remains in his hole until ticksUntilAwake decrements to zero and then he pops out.
+        // The mole remains popped out of his hole until ticksUntilDormant decrements to zero.
+        // Once ticksUntilDomant goes to zero, the mole hides in his hole and remains dormant until activated again.
+        wamDisplay_moleTickCount_t ticksUntilAwake;  // Mole will wake up (pop out of hole) when this goes from 1 -> 0.
+        wamDisplay_moleTickCount_t ticksUntilDormant; // Mole will go dormant (back in hole) this goes 1 -> 0.
+} wamDisplay_moleInfo_t;
+
+// *** GLOBALS ***
+    // This will contain pointers to all of the mole info records.
+    // This will ultimately be treated as an array of pointers.
+static wamDisplay_moleInfo_t** wamDisplay_moleInfo;
+static wamDisplay_moleCount_e currentGameMoleCount;
+static uint16_t hitScore;
+static uint16_t missScore;
+static uint8_t currentLevel;
+static uint8_t activeMoleCount;
+
+static uint16_t lastDrawnHitScore;
+static uint16_t lastDrawnMissScore;
+static uint8_t lastDrawnLevel;
+static uint16_t hitsPerLevel = STARTING_HITS_PER_LEVEL;
+void wamDisplay_drawScoreScreen();
+
+// private helper data
+static uint8_t numberOfMoles;
+    // coordinate array
+static wamDisplay_point_t originPoints[MAX_NUMBER_OF_MOLES] = {
+        { .x = X1, .y = Y1 },
+        { .x = X3, .y = Y1 },
+        { .x = X1, .y = Y3 },
+        { .x = X3, .y = Y3 },
+        { .x = X2, .y = Y1 },
+        { .x = X2, .y = Y3 },
+        { .x = X1, .y = Y2 },
+        { .x = X2, .y = Y2 },
+        { .x = X3, .y = Y2 },
+};
+
+
+// Allocates the memory for wamDisplay_moleInfo_t records.
+// Computes the origin for each mole assuming a simple row-column layout:
+// 9 moles: 3 rows, 3 columns, 6 moles: 2 rows, 3 columns, 4 moles: 2 rows, 2 columns
+// Also inits the tick counts for awake and dormant.
+static void wamDisplay_computeMoleInfo() {
+    wamDisplay_moleInfo = (wamDisplay_moleInfo_t**) malloc(numberOfMoles * sizeof(wamDisplay_moleInfo_t*));
+    for(int i = 0; i < numberOfMoles; i++) {
+        wamDisplay_moleInfo[i] = (wamDisplay_moleInfo_t*) malloc(sizeof(wamDisplay_moleInfo_t));
+        wamDisplay_moleInfo[i]->origin = originPoints[i];
+        wamDisplay_moleInfo[i]->ticksUntilDormant = 0;
+        wamDisplay_moleInfo[i]->ticksUntilAwake = 0;
+    }
+}
+
+static uint8_t computeMoleIndexFromTouchCoord(uint16_t x, uint16_t y) {
+    if(x < MOLE_BACKGROUND_X0 || x > MOLE_BACKGROUND_X3 || y < MOLE_BACKGROUND_Y0 || y > MOLE_BACKGROUND_Y3) {
+        return MOLE_INDEX_NOT_A_MOLE;
+    }
+    // 3 columns farthest to the left
+    if(x < MOLE_BACKGROUND_X1) {
+        if(y < MOLE_BACKGROUND_Y1) {
+            return MOLE_INDEX_ZERO;
+        }
+        if(y < MOLE_BACKGROUND_Y2) {
+            return MOLE_INDEX_SIX;
+        }
+        if(y < MOLE_BACKGROUND_Y3) {
+            return MOLE_INDEX_TWO;
+        }
+    }
+
+    // 3 columns in the middle
+    if(x < MOLE_BACKGROUND_X2) {
+        if(y < MOLE_BACKGROUND_Y1) {
+            return MOLE_INDEX_FOUR;
+        }
+        if(y < MOLE_BACKGROUND_Y2) {
+            return MOLE_INDEX_SEVEN;
+        }
+        if(y < MOLE_BACKGROUND_Y3) {
+            return MOLE_INDEX_FIVE;
+        }
+    }
+
+    // 3 columns to the right
+    if(x < MOLE_BACKGROUND_X3) {
+        if(y < MOLE_BACKGROUND_Y1) {
+            return MOLE_INDEX_ONE;
+        }
+        if(y < MOLE_BACKGROUND_Y2) {
+            return MOLE_INDEX_EIGHT;
+        }
+        if(y < MOLE_BACKGROUND_Y3) {
+            return MOLE_INDEX_THREE;
+        }
+    }
+}
+
+// Call this before using any wamDisplay_ functions.
+void wamDisplay_init() {
+    switch(currentGameMoleCount) {
+        case wamDisplay_moleCount_4:
+            numberOfMoles = MOLE_NUM_FOUR;
+            break;
+        case wamDisplay_moleCount_6:
+            numberOfMoles = MOLE_NUM_SIX;
+            break;
+        case wamDisplay_moleCount_9:
+            numberOfMoles = MOLE_NUM_NINE;
+            break;
+        default:
+            numberOfMoles = 0;
+            break;
+    }
+    wamDisplay_computeMoleInfo();
+}
+
+// Draw the game display with a background and mole holes.
+void wamDisplay_drawMoleBoard() {
+    display_fillScreen(DISPLAY_BLACK);
+    display_fillRect(MOLE_BACKGROUND_MARGIN_X, MOLE_BACKGROUND_MARGIN_Y_TOP, MOLE_BACKGROUND_WIDTH,
+            MOLE_BACKGROUND_HEIGHT, DISPLAY_GREEN);
+    for(int i = 0; i < numberOfMoles; i++) {
+        display_fillCircle(wamDisplay_moleInfo[i]->origin.x, wamDisplay_moleInfo[i]->origin.y, HOLE_RADIUS, DISPLAY_BLACK);
+    }
+    wamDisplay_drawScoreScreen();
+}
+
+static void drawMole(uint8_t index, bool erase) {
+    uint16_t color = erase ? DISPLAY_BLACK : DISPLAY_RED;
+    display_fillCircle(wamDisplay_moleInfo[index]->origin.x, wamDisplay_moleInfo[index]->origin.y, HOLE_RADIUS, color);
+}
+
+// Draw the initial splash (instruction) screen.
+void wamDisplay_drawSplashScreen() {
+    display_setCursor(SPLASH_CURSOR_X1, SPLASH_CURSOR_Y1);
+    display_setTextSize(TEXT_SIZE_LARGE);
+    display_setTextColor(DISPLAY_WHITE);
+    display_println("Whack a Mole!");
+
+    display_setCursor(SPLASH_CURSOR_X2, SPLASH_CURSOR_Y2);
+    display_setTextSize(TEXT_SIZE_MEDIUM);
+    display_println("Touch Screen To Start");
+}
+
+// Draw the game-over screen.
+void wamDisplay_drawGameOverScreen() {
+    display_fillScreen(DISPLAY_BLACK);
+    display_setTextColor(DISPLAY_WHITE);
+
+    display_setTextSize(TEXT_SIZE_LARGE);
+    display_setCursor(GAME_OVER_CURSOR_X1, GAME_OVER_CURSOR_Y1);
+    display_print("Game Over");
+
+    display_setTextSize(TEXT_SIZE_MEDIUM);
+    display_setCursor(GAME_OVER_CURSOR_X2, GAME_OVER_CURSOR_Y2);
+    char hitsMessage[GAME_OVER_MESSAGE_SIZE];
+    sprintf(hitsMessage, "Hits: %d", hitScore);
+    display_print(hitsMessage);
+
+    display_setCursor(GAME_OVER_CURSOR_X3, GAME_OVER_CURSOR_Y3);
+    char missesMessage[GAME_OVER_MESSAGE_SIZE];
+    sprintf(missesMessage, "Misses: %d", missScore);
+    display_print(missesMessage);
+
+    display_setCursor(GAME_OVER_CURSOR_X4, GAME_OVER_CURSOR_Y4);
+    char levelMessage[GAME_OVER_MESSAGE_SIZE];
+    sprintf(levelMessage, "Final Level: %d", currentLevel);
+    display_print(levelMessage);
+
+    display_setCursor(GAME_OVER_CURSOR_X5, GAME_OVER_CURSOR_Y5);
+    display_print("(Touch to Try Again)");
+}
+
+// Completely draws the score screen.
+// This function renders all fields, including the text fields for "Hits" and "Misses".
+// Usually only called once when you are initializing the game.
+void wamDisplay_drawScoreScreen() {
+    display_setTextColor(DISPLAY_WHITE);
+    display_setTextSize(TEXT_SIZE_MEDIUM);
+
+    display_setCursor(SCORE_CURSOR_X1, SCORE_CURSOR_Y);
+    char hitsMessage[SCORE_MESSAGE_SIZE];
+    sprintf(hitsMessage, "Hit:%d", hitScore);
+    display_print(hitsMessage);
+
+    display_setCursor(SCORE_CURSOR_X2, SCORE_CURSOR_Y);
+    char missesMessage[SCORE_MESSAGE_SIZE];
+    sprintf(missesMessage, "Miss:%d", missScore);
+    display_print(missesMessage);
+
+    display_setCursor(SCORE_CURSOR_X3, SCORE_CURSOR_Y);
+    char levelMessage[SCORE_MESSAGE_SIZE];
+    sprintf(levelMessage, "Level:%d", currentLevel);
+    display_print(levelMessage);
+
+    lastDrawnHitScore = hitScore;
+    lastDrawnMissScore = missScore;
+    lastDrawnLevel = currentLevel;
+}
+
+void wamDisplay_eraseScoreScreen() {
+    display_setTextColor(DISPLAY_BLACK);
+    display_setTextSize(TEXT_SIZE_MEDIUM);
+
+    display_setCursor(SCORE_CURSOR_X1, SCORE_CURSOR_Y);
+    char hitsMessage[SCORE_MESSAGE_SIZE];
+    sprintf(hitsMessage, "Hit:%d", lastDrawnHitScore);
+    display_print(hitsMessage);
+
+    display_setCursor(SCORE_CURSOR_X2, SCORE_CURSOR_Y);
+    char missesMessage[SCORE_MESSAGE_SIZE];
+    sprintf(missesMessage, "Miss:%d", lastDrawnMissScore);
+    display_print(missesMessage);
+
+    display_setCursor(SCORE_CURSOR_X3, SCORE_CURSOR_Y);
+    char levelMessage[SCORE_MESSAGE_SIZE];
+    sprintf(levelMessage, "Level:%d", lastDrawnLevel);
+    display_print(levelMessage);
+}
+
+// GETTERS AND SETTERS
+    // Provide support to set games with varying numbers of moles. This function
+    // would be called prior to calling wamDisplay_init();
+void wamDisplay_selectMoleCount(wamDisplay_moleCount_e moleCount) {
+    currentGameMoleCount = moleCount;
+}
+
+// Sets the hit value in the score window.
+void wamDisplay_setHitScore(uint16_t hits) {
+    hitScore = hits;
+}
+
+// Gets the current hit value.
+uint16_t wamDisplay_getHitScore() {
+    return hitScore;
+}
+
+// Sets the miss value in the score window.
+void wamDisplay_setMissScore(uint16_t misses) {
+    missScore = misses;
+}
+
+// Make this function available for testing purposes.
+void wamDisplay_incrementMissScore() {
+    missScore++;
+}
+
+// Gets the miss value.
+// Can be used for testing and other functions.
+uint16_t wamDisplay_getMissScore() {
+    return missScore;
+}
+
+// Sets the level value on the score board.
+void wamDisplay_incrementLevel() {
+    currentLevel++;
+}
+
+// Retrieves the current level value.
+// Can be used for testing and other functions.
+uint16_t wamDisplay_getLevel() {
+    return currentLevel;
+}
+
+// Reset the scores and level to restart the game.
+void wamDisplay_resetAllScoresAndLevel() {
+    hitScore = 0;
+    missScore = 0;
+    currentLevel = 0;
+    numberOfMoles = 0;
+    activeMoleCount = 0;
+    hitsPerLevel = STARTING_HITS_PER_LEVEL;
+}
+
+
+// This takes the provided coordinates and attempts to whack a mole. If a
+// mole is successfully whacked, all internal data structures are updated and
+// the display and score is updated. You can only whack a mole if the mole is awake (visible).
+// The return value can be used during testing (you could just print which mole is
+// whacked without having to implement the entire game).
+wamDisplay_moleIndex_t wamDisplay_whackMole(wamDisplay_point_t* whackOrigin) {
+    uint8_t moleIndex = computeMoleIndexFromTouchCoord(whackOrigin->x, whackOrigin->y);
+
+    if(moleIndex != MOLE_INDEX_NOT_A_MOLE) {
+        // if the mole is currently visible, increase hit score
+        if(wamDisplay_moleInfo[moleIndex]->ticksUntilDormant && !wamDisplay_moleInfo[moleIndex]->ticksUntilAwake) {
+            drawMole(moleIndex, ERASE); // erase the mole
+            wamDisplay_moleInfo[moleIndex]->ticksUntilDormant = 0;
+            hitScore++;
+            drawMole(moleIndex, ERASE);
+            activeMoleCount--;
+
+            if(hitScore && hitScore % hitsPerLevel == 0) {
+                currentLevel++;
+                hitsPerLevel *= 2;
+                wamControl_setMaxActiveMoles(wamControl_getMaxActiveMoles() + 1);
+            }
+        }
+
+        // draw an updated version of the score screen
+        wamDisplay_eraseScoreScreen();
+        wamDisplay_drawScoreScreen();
+    }
+
+    return moleIndex;
+}
+
+
+// Test function that can be called from main() to demonstrate milestone 1.
+// Invoking this function should provide the same behavior as shown in the Milestone 1 video.
+void wamDisplay_runMilestone1_test() {
+//    display_fillScreen(DISPLAY_BLACK);
+//    wamDisplay_init();              // Initialize the WAM display.
+//    wamDisplay_drawSplashScreen();  // Draw the game splash screen.
+//    utils_msDelay(1000);
+//    while(!display_isTouched());
+
+    display_fillScreen(DISPLAY_BLACK);
+    numberOfMoles = 9;
+    wamDisplay_computeMoleInfo();
+    wamDisplay_drawMoleBoard();
+    wamDisplay_drawScoreScreen();
+    while(!display_isTouched());
+    display_clearOldTouchData();
+    utils_msDelay(50);
+    int16_t x, y;
+    uint8_t z;
+    display_getTouchedPoint(&x, &y, &z);
+    wamDisplay_point_t point = {.x=x, .y=y};
+    printf("mole index touched: %d\n\r", wamDisplay_whackMole(&point));
+
+//    display_fillScreen(DISPLAY_BLACK);
+//    wamDisplay_drawGameOverScreen();
+//    while(!display_isTouched());
+}
+
+
+// Selects a random mole and activates it.
+// Activating a mole means that the ticksUntilAwake and ticksUntilDormant counts are initialized.
+// See the comments for wamDisplay_moleInfo_t for details.
+// Returns true if a mole was successfully activated. False otherwise. You can
+// use the return value for error checking as this function should always be successful
+// unless you have a bug somewhere.
+bool wamDisplay_activateRandomMole() {
+    uint8_t randMoleIndex;
+    for(int i = 0; i < MAX_NUMBER_RAND_TRIES; i++) {
+        randMoleIndex = rand() % numberOfMoles;
+        if(wamDisplay_moleInfo[randMoleIndex]->ticksUntilAwake == 0 && wamDisplay_moleInfo[randMoleIndex]->ticksUntilDormant == 0) {
+            break;
+        }
+    }
+
+    wamDisplay_moleInfo[randMoleIndex]->ticksUntilAwake = wamControl_getRandomMoleAsleepInterval();
+    wamDisplay_moleInfo[randMoleIndex]->ticksUntilDormant = wamControl_getRandomMoleAwakeInterval();
+    activeMoleCount++;
+    return true;
+}
+
+
+// This updates the ticksUntilAwake/ticksUntilDormant clocks for all of the moles.
+void wamDisplay_updateAllMoleTickCounts() {
+    for(int i = 0; i < numberOfMoles; i++) {
+        if(wamDisplay_moleInfo[i]->ticksUntilAwake) {
+            wamDisplay_moleInfo[i]->ticksUntilAwake--;
+            // if the ticks until awake expre, draw the mole
+            if(!wamDisplay_moleInfo[i]->ticksUntilAwake) {
+                drawMole(i, NO_ERASE);
+            }
+        }
+        else if(wamDisplay_moleInfo[i]->ticksUntilDormant) {
+            wamDisplay_moleInfo[i]->ticksUntilDormant--;
+            // if the ticks until dormant expire, increment the miss count and erase the mole
+            if(!wamDisplay_moleInfo[i]->ticksUntilDormant) {
+                missScore++;
+                drawMole(i, ERASE);
+                activeMoleCount--;
+                wamDisplay_eraseScoreScreen();
+                wamDisplay_drawScoreScreen();
+            }
+        }
+    }
+}
+
+// Returns the count of currently active moles.
+// A mole is active if it is not dormant, if:
+// ticksUntilAwake or ticksUntilDormant are non-zero (in the moleInfo_t struct).
+uint16_t wamDisplay_getActiveMoleCount() {
+    return activeMoleCount;
+}
+

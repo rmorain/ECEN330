@@ -9,6 +9,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include supportFiles/subdir.mk
+-include src/wam/subdir.mk
 -include src/ticTacToe/subdir.mk
 -include src/switchesAndButtons/subdir.mk
 -include src/mySimon/subdir.mk
